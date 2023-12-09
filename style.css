@@ -810,6 +810,7 @@ box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 14px 32px 0px rgba(0, 0, 0,
 height: 79px;
 display: flex;
 justify-content: space-between;
+
 }
 .footer_text_first{
     color: #FFF;
@@ -886,7 +887,6 @@ height: 46px;
 background-color: #ffffff;
 transition: 0.5s;
 }
-
 .social_arrow_item:hover .name_arrow{
     fill: #99449F;
 }
@@ -915,8 +915,6 @@ transition: 0.5s;
     align-items: center;
     justify-content: center;
 }
-
-
 .modal{
     position: fixed;
     inset: 0;
