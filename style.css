@@ -1,0 +1,1061 @@
+@font-face { 
+    font-family: 'Broken Detroit'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-display: swap; 
+    src: url('./font/broken-detroit.woff2') format('woff2')
+}
+
+
+*, ::before, ::after { 
+    box-sizing: border-box; 
+}
+body {
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 15275px;
+    background: var(--bg, #131313);
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+section{
+    overflow: hidden;
+}
+li {
+    list-style-type: none;
+}
+.menu_link a{
+    color: #fff;
+    font-family: 'Lexend Giga';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    padding-top: 13px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu_header{
+    color: #fff;
+font-family: 'Broken Detroit', sans-serif;   /*інший шрифт*/
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+padding-top: 13px;
+align-items: center;
+justify-content: center;
+margin-bottom: 226px;
+}.menu_link a{
+    cursor: pointer;
+}
+.menu_header :not(:last-child){
+padding-right: 36px;
+}
+.header_h2{
+    color: #FFF;
+    font-family: 'Lexend Giga';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -9.28px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.header_h1{
+    position: relative;
+    color: #fff;
+    font-family: 'Broken Detroit', sans-serif;  /*інший шрифт та розмір*/
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 18.4px;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.header{
+    background-image:url('./image/background.png');
+    
+    height: 1080px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+.photo_cent{
+    position: absolute;
+    width: 688px;
+    height: 688px;
+    z-index: 2;
+    margin-top: 43px;
+}
+.picture{
+    display: flex;
+    justify-content: center;
+}
+main{
+    height: 14705px;
+}
+.text{
+    display: flex;
+width: 1023px;
+color: var(--white, #FFF);
+text-align: center;
+font-family: 'Lexend Giga';
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 161px;
+position: relative;
+}
+.text_retreat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.small_cristal{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 342px;
+    margin-bottom: 16px;
+}
+.big_cristal{
+    position: absolute;
+    right: 0;
+    margin-right: 75px;
+    margin-top: 119px;
+}
+.arm{
+    position: absolute;
+    margin-top: 332px;
+}
+.text_link{
+    display: flex;
+    flex-direction: column;
+}
+.characters{
+    color: var(--white, #FFF);
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 9.6px;
+display: flex;
+justify-content: center;
+margin-top: 140px;
+text-transform: uppercase;
+}
+.characters span{
+    color: var(--violet, #99449F);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 9.6px;
+}
+.item{
+    color: var(--white, #FFF);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 4px;
+text-align: center;
+padding-bottom: 30px;
+}
+.text_item{
+    margin-top: 27px;
+    margin-bottom: 93px;
+}
+.text_item_another{
+    margin-top: 27px;
+}
+.comand{
+    margin-bottom: 93px;
+}
+.item_info{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Lexend Giga';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 469px;
+
+}
+.card_character{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.history_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 160px;
+}
+.history_card{
+    display: flex;
+    gap: 21px;
+}
+.card_character{
+    margin-top: 160px;
+    display: flex;
+    align-items: baseline;;
+}
+.card{
+    display: flex;
+width: 540px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.card_list{
+    position: relative;
+    width: 400px;
+height: 603px;
+margin-bottom: 80px;
+cursor: pointer;
+}
+.card_list_img{
+    border-radius: 40px;
+border: 3px solid var(--violet, #99449F);
+}
+.card_list .name{
+    color: var(--white, #FFF);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-top: 16px;
+padding-left: 33px;
+text-transform: uppercase;
+position: absolute;
+top: 0;
+}
+.card_list_cristal{
+    position: absolute;
+    top: -25px;
+    right: -25px;
+}
+.numeral{
+    color: var(--white, #FFF);
+text-align: center;
+font-family: 'Broken Detroit', sans-serif;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 8px;
+}
+.numeral_sec{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        right: 0;
+}
+.num_red_sec{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    z-index: 3; 
+    bottom: -10px;
+    right: -4px; 
+}
+.red_drop{
+    position: absolute;
+    z-index: 3;
+    bottom: -95px;
+    right: -85px;
+}
+.num_red{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    z-index: 3; 
+    bottom: -10px;
+    right: 2px;
+}
+.purple_drop{
+    position: absolute;
+    z-index: 3;
+    left: -85px;
+    bottom: -95px;
+}
+.num_purple{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    z-index: 3; 
+    bottom: -10px;
+    left: 3px;  
+}
+.num_purple_sec{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    z-index: 3; 
+    bottom: -10px;
+    left: -7px;    
+}
+
+.healer{
+border-radius: 20px;
+}
+.people_card{
+    position: relative;
+}
+.card_border_healer{
+    overflow: hidden;
+}
+.card_border_healer:hover img{
+    transition: transform 0.5s ease;
+    transform: scale(150%);
+}
+.card_border_healer{
+    border-radius: 20px;
+    border: 3px solid var(--cards-healer-card, #D616A1);
+
+}
+.healer_left_vector{
+    position: absolute;
+    left: -5px;
+    bottom: 78px;
+    width: 49px;
+    height: 96px;
+    fill: #131313;
+}
+.healer_bottom_vector{
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+    width: 76.5px;
+    height: 64.5px;
+    fill: #131313;
+}
+.hunter{
+    border-radius: 20px;
+}
+.card_border_hunter{
+    overflow: hidden;
+}
+.card_border_hunter:hover img{
+    transition: transform 0.5s;
+    transform: scale(150%);
+}
+.card_border_hunter{
+    border-radius: 20px;
+    border: 3px solid var(--cards-hunter-card, #4D098C);
+}
+.hunter_top_vector{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 105px;
+height: 121px;
+    fill: #131313;
+}
+.hunter_bottom_vector{
+    position: absolute;
+    left: 18px;
+    bottom: -5px;
+    width: 72.5px;
+height: 37.5px;
+    fill: #131313;
+}
+.shadow{
+    border-radius: 20px;
+}
+.card_border_shadow{
+    overflow: hidden;
+}
+.card_border_shadow:hover img{
+    transition: transform 0.5s;
+    transform: scale(150%);
+}
+.card_border_shadow{
+    border-radius: 20px;
+    border: 3px solid var(--cards-shadow-card, #590E7B);
+}
+.shadow_bottom_vector{
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+    width: 137.5px;
+    height: 110.5px;
+    fill: #131313;
+}
+.pirate{
+    border-radius: 20px;
+}
+.card_border_pirate{
+    overflow: hidden;
+}
+.card_border_pirate:hover img{
+    transition: transform 0.5s;
+    transform: scale(150%);
+}
+.card_border_pirate{
+    border-radius: 20px;
+    border: 3px solid var(--cards-pirate-card, #C300E3);
+}
+.pirate_bottom_vector{
+    position: absolute;
+    bottom: -3px;
+    left: 208.5px;
+    width: 207px;
+    height: 32px;
+    fill: #131313;
+}
+.pirate_top_vector{
+    position: absolute;
+    left: -5px;
+    top: 149px;
+    width: 61px;
+height: 131px;
+fill: #131313;
+}
+.arrow{
+    border-radius: 20px;
+}
+.card_border_arrow{
+    overflow: hidden;
+}
+.card_border_arrow:hover img{
+    transition: transform 0.5s;
+    transform: scale(150%);
+}
+.card_border_arrow{
+    border-radius: 20px;
+    border: 3px solid var(--cards-arrow-card, #FF4AFF);
+}
+.arrow_top_vector{
+    position: absolute;
+    top: 0;
+    right: 21px;
+    width: 138px;
+height: 36px;
+    fill: #131313;
+}
+.arrow_bottom_vector{
+    position: absolute;
+    left: -2px;
+    bottom: -10px;
+    width: 94px;
+height: 91.5px;
+fill: #131313;
+}
+
+.ghost{
+    border-radius: 20px;
+}
+.card_border_ghost{
+    overflow: hidden;
+}
+.card_border_ghost:hover img{
+    transition: transform 0.5s;
+    transform: scale(150%);
+}
+.card_border_ghost{
+    border-radius: 20px;
+    border: 3px solid var(--cards-ghost-card, #7B149E);
+}
+.ghost_top_vector{
+    position: absolute;
+    top: 0;
+    right: -2px;
+    width: 130px;
+height: 242px;
+    fill: #131313;
+}
+.ghost_bottom_vector{
+    position: absolute;
+    left: -2px;
+    top: 300px;
+    width: 34px;
+height: 103.5px;
+fill: #131313;
+}
+
+
+.card:hover .item_healer{
+    color: var(--cards-healer-card, #D616A1);
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    transition: 0.3s ease-in-out;
+}
+.card:hover .item_hunter{
+    color: var(--cards-hunter-card, #4D098C);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 4px;
+transition: 0.3s ease-in-out;
+}
+.card:hover .item_shadow{
+    color: var(--cards-shadow-card, #590E7B);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 4px;
+transition: 0.3s ease-in-out;
+}
+.card:hover .item_pirate{
+    color: var(--cards-pirate-card, #C300E3);
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    transition: 0.3s ease-in-out;
+}
+.card:hover .item_arrow{
+    color: var(--cards-arrow-card, #FF4AFF);
+    text-align: center;
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    transition: 0.3s ease-in-out;
+}
+.card:hover .item_ghost{
+    color: var(--cards-ghost-card, #7B149E);
+    font-family: 'Broken Detroit', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.story{
+    color: var(--white, #FFF);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 9.6px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.story span{
+    color: var(--violet, #99449F);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 9.6px;
+}
+.image{
+    position: relative;
+}
+.text_history{
+    position: absolute;
+    display: flex;
+width: 732px;
+height: 524px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: var(--white, #FFF);
+font-family: 'Lexend Giga';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.info_history{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.history{
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white, #FFF);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 9.6px;
+}
+.cards span{
+    color: var(--violet, #99449F);
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 9.6px;
+}
+.button_item{
+    width: 270px;
+    height: 70px;
+    color: var(--white, #FFF);
+text-align: center;
+font-family: 'Broken Detroit', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+border: 0;
+border-radius: 36px;
+background: var(--violet, #99449F);
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 14px 32px 0px rgba(0, 0, 0, 0.10), 0px 58px 58px 0px rgba(0, 0, 0, 0.09), 
+0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0.00);
+}
+.button_item_list{
+    width: 400px;
+    height: 70px;
+    color: var(--white, #FFF);
+text-align: center;
+font-family: 'Broken Detroit', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+border: 0;
+border-radius: 36px;
+background: var(--violet, #99449F);
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 14px 32px 0px rgba(0, 0, 0, 0.10), 0px 58px 58px 0px rgba(0, 0, 0, 0.09), 
+0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0.00);
+}
+.button_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 160px;
+    margin-bottom: 50px;
+}
+.button_item:hover, .button_item_list:hover{
+    color: var(--white, #99449F);
+    background: var(--violet, #fff);
+    transition: 0.5s
+}
+.cards_item :not(:last-child){
+    padding-right: 20px;
+}
+.text_history :not(:last-child){
+    padding-bottom: 20px;
+}
+
+.cards_item{
+    display: flex;
+    padding-bottom: 20px;
+}
+.card_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.end_block_title{
+    color: #FFF;
+text-align: center;
+font-family: 'Broken Detroit', sans-serif;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 987px;
+text-transform: uppercase;
+}
+.end_block_button_list{
+    color: var(--white, #FFF);
+text-align: center;
+font-family: 'Broken Detroit', sans-serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+    width: 545px;
+height: 145px;
+    border-radius: 36px;
+background: var(--violet, #99449F);
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 14px 32px 0px rgba(0, 0, 0, 0.10), 
+0px 58px 58px 0px rgba(0, 0, 0, 0.09), 0px 130px 78px 0px rgba(0, 0, 0, 0.05), 
+0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0.00);
+}
+.end_block{
+    margin-top: 200px;
+}
+.text_block{
+    padding-top: 448px;
+}
+.text_block :not(:last-child){
+    padding-bottom: 130px;
+}
+.end_block_button_list:hover{
+    color: #99449F;
+    background-color: #FFF;
+    transition: 0.5s ease;
+}
+.end_block_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.end_block_title{
+    position: relative;
+}
+.end_block_button_list{
+    position: absolute;
+    cursor: pointer;
+}
+.woman{
+    position: absolute;
+    right: 0;
+}
+.man{
+    position: absolute;
+    left: 0;
+}
+.footer{
+    padding-left:129px;
+    padding-right:129px;
+height: 79px;
+display: flex;
+justify-content: space-between;
+}
+.footer_text_first{
+    color: #FFF;
+font-family: 'Lexend Giga';
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.footer_text_second{
+    color: #FFF;
+    font-family: 'Broken Detroit', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.92px;
+}
+.footer_text :not(:last-child){
+    padding-bottom: 16px;
+}
+.footer_text{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.footer_info_text{
+    color: var(--white, #FFF);
+font-family: 'Lexend Giga';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer_info_year{
+    color: var(--violet, #99449F);
+font-family: 'Lexend Giga';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer_info{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_info :not(:last-child){
+    padding-bottom: 12px;
+}
+.name{
+    width: 20px;
+    height: 20px;
+}
+.social_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    background-color: #99449F;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.social_item:hover{
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social_arrow_item:hover{
+    width: 46px;
+height: 46px;
+background-color: #ffffff;
+transition: 0.5s;
+}
+
+.social_arrow_item:hover .name_arrow{
+    fill: #99449F;
+}
+.social{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.social_arrow_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    background-color: #99449F;
+    width: 46px;
+    height: 46px; 
+    margin-left: 94px;
+}
+.name_arrow{
+    fill: #FFF;
+    width: 30px;
+    height: 30px; 
+}
+.networks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+}
+.modal_main{
+    position: relative;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin: auto;
+    color:#212121;
+    padding: 40px;
+    cursor: default;
+}
+.modal_close{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+.modal_close:hover{
+    fill: #99449F;
+    transition: 250ms ease-in;
+}
+.modal_title{
+    margin-bottom: 12px;
+    color: #212121;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+.modal__input-wrapper {
+    position: relative;
+    margin-bottom: 12px;
+}
+.modal__label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--secondary-color);
+    font-size: 15px;
+    letter-spacing: 0.12px;
+}
+.modal__input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    padding-left: 42px;
+    outline: none;
+}
+
+.coment textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+border: 1px solid rgba(33, 33, 33, 0.20);
+resize: none;
+font-family: 'Lexend Giga';
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+outline: none;
+}
+.coment textarea{
+    outline: none;
+    height: 120px; 
+    width: 100%; 
+    padding: 12px 16px; 
+    resize: none;
+}
+.condition_modal{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.condition_modal>label{
+    color: #757575;
+    font-family: 'Lexend Giga';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+.condition_modal>label a{
+    color: #2196F3;
+    font-family: 'Lexend Giga';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+}
+.send{
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+background: #2196F3;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+color: #FFF;
+text-align: center;
+font-family: 'Lexend Giga';
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+border: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+margin-top: 20px;
+}
+
+.send:hover{
+    border-radius: 4px;
+background: #188CE8;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+cursor: pointer;
+}
