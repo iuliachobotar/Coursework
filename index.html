@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,751 +10,812 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header" class="header">
-<ul class="menu_header">
-    <li class="menu_link">
-        <a href="#characters">Characters</a>
-    </li>
-    <li class="menu_link">
-        <a href="#history">History</a>
-    </li>
-    <li class="menu_link">
-        <a href="#cards">Cards</a>
-    </li>
-    <li class="menu_link">
-        <a href="#download">Download a game</a>
-    </li>
-</ul>
+        <ul class="menu_header">
+            <li class="menu_link">
+                <a href="#characters">Characters</a>
+            </li>
+            <li class="menu_link">
+                <a href="#history">History</a>
+            </li>
+            <li class="menu_link">
+                <a href="#cards">Cards</a>
+            </li>
+            <li class="menu_link">
+                <a href="#download">Download a game</a>
+            </li>
+        </ul>
     </header>
-<section class="tint">
-    <h2 class="header_h2">New Era of Card Battles</h2>
-    <div class="picture"><img class="photo_cent" src="./image/img.png" alt="man"></div>
-    <h1 class="tint_h1">CyberJungles</h1>
-</section>
     <main>
+        <section class="tint">
+            <h2 class="header_h2">New Era of Card Battles</h2>
+            <div class="picture"><img class="photo_cent" src="./image/img.png" alt="man"></div>
+            <h1 class="tint_h1">CyberJungles</h1>
+        </section>
+        <section class="cristals">
+            <div class="container">
+                <p class="cristals__text">
+                    In a world where people used cybernetics to create perfect and deadly animal-machines, a terrible
+                    event occurred. Control over some of these creations was lost, and they began attacking humans,
+                    destroying everything in their path. In this dystopia, the surviving humans formed different
+                    factions and compete with each other using their cyber beasts in a card battle. The player must
+                    choose their faction and assemble a deck of cyber animals for battle.
+                </p>
+            </div>
+            <div class="small_cristal"><img src="./image/img111.png" width="58" height="58" alt=""></div>
+            <div class="big_cristal"><img src="./image/img1.png"  width="123" height="123" alt=""></div>
+            <div class="arm"><img src="./image/img11.png" width="367" height="367" alt=""></div>         
+        </section>
+        
+        <section class="characters">
+            <div class="container">
+                <h2 id="characters" class="characters__title">
+                    C<span>h</span>ara<span>c</span>ters
+                </h2>
+                <ul class="characters__list">
+                    <li class="characters__item character">
+                        <div class="character__img">
+                            <div class="character__thumb">
+                                <!-- gabaryty -->
+                                <img class="healer" src="./image/card.jpg" alt="">
+                                <svg class="healer_left_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector"></use>
+                                </svg>
+                                <svg class="healer_bottom_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector1"></use>
+                                </svg>
+                            </div>   
+                        </div>
+                        <div class="character__text">
+                            <h3 class="character__title">Healer</h3>
+                            <p class="character__desc">She can use the ability "Restoration" to restore the health of herself or
+                                allied creatures.</p>
+                        </div>
+                    </li>
 
-    <section class="cristals">
-        
-        <div class="small_cristal"><img src="./image/img111.png" alt=""></div>
-        <div class="big_cristal"><img src="./image/img1.png" alt=""></div>
-        <div class="arm"><img src="./image/img11.png" alt=""></div>
-        <div class="text_retreat"> 
-            <p class="text">
-                In a world where people used cybernetics to create perfect and deadly animal-machines, a terrible event occurred. Control over some of these creations was lost, and they began attacking humans, destroying everything in their path. In this dystopia, the surviving humans formed different factions and compete with each other using their cyber beasts in a card battle. The player must choose their faction and assemble a deck of cyber animals for battle.
-            </p>
-        </div>
-    </section>
-<section class="info_container">
-            <h2 id="characters" class="characters">
-                C<span>h</span>ara<span>c</span>ters
-            </h2>
-        
+                    <li class="characters__item character">
+                        <div class="people_card">
+                            <div class="card_border_hunter">
+                                <img class="hunter" src="./image/card-1.jpg" alt="">
+                                <svg class="hunter_top_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector2"></use>
+                                </svg>
+                                <svg class="hunter_bottom_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector2_2"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text_item">
+                            <h3 class="item item_hunter">Hunter</h3>
+                            <p class="item_info ">He can place a "Trap" on the battlefield that deals damage to enemy
+                                creatures when they enter play or attack the Hunter.</p>
+                        </div>
+                    </li>
+                    <li class="characters__item character">
+                        <div class="people_card">
+                            <div class="card_border_shadow">
+                                <img class="shadow" src="./image/card-2.jpg" alt="">
+                                <svg class="shadow_bottom_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector3"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text_item">
+                            <h3 class="item item_shadow">Shadow</h3>
+                            <p class="item_info">She can use "Dark Shield" which protects her from magical attacks and
+                                absorbs some of the damage received.</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="people_card">
+                            <div class="card_border_pirate">
+                                <img class="pirate" src="./image/card-3.jpg" alt="">
+                                <svg class="pirate_bottom_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector4_2"></use>
+                                </svg>
+                                <svg class="pirate_top_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector4_1"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text_item_another">
+                            <h3 class="item item_pirate">Pirate</h3>
+                            <p class="item_info">He has the ability to "Steal", which allows him to steal a card from the
+                                opponent's deck or hand."</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="people_card">
+                            <div class="card_border_arrow">
+                                <img class="arrow" src="./image/card-5.jpg" alt="">
+                                <svg class="arrow_top_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector5"></use>
+                                </svg>
+                                <svg class="arrow_bottom_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector5_2"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text_item_another">
+                            <h3 class="item item_arrow">Arrow</h3>
+                            <p class="item_info">She can use "Slow Arrow", which slows down the movement of her opponents
+                                and weakens their attacks.</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="people_card">
+                            <div class="card_border_ghost">
+                                <img class="ghost" src="./image/card-4.jpg" alt="">
+                                <svg class="ghost_top_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector6"></use>
+                                </svg>
+                                <svg class="ghost_bottom_vector">
+                                    <use href="./image/symbol-defs.svg#icon-Vector6_2"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text_item_another">
+                            <h3 class="item item_ghost">Ghost</h3>
+                            <p class="item_info">He can use "Phantom Curse" to place a curse on the opponent's cards,
+                                reducing their effectiveness when they are used.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <ul class="card_character">
-        <li class="card">
-            <div class="people_card">
-                <div class="card_border_healer">
-                    <img class="healer" src="./image/card.jpg" alt="">
-                    <svg class="healer_left_vector"><use href="./image/symbol-defs.svg#icon-Vector"></use></svg>
-                    <svg class="healer_bottom_vector"><use href="./image/symbol-defs.svg#icon-Vector1"></use></svg>
-                </div>
+        <section class="history">
+            <div class="container">
+                <h2 id="history" class="story">Hi<span>s</span>tor<span>y</span></h2>
+                <ul class="history_item">
+                    <li class="history_card">
+                        <img src="./image/section.png" alt="">
+                        <div class="text_history">
+                            <p>
+                                In 2060, a group of scientists began conducting secret experiments on genetically
+                                modifying animals in an underground laboratory.
+                                They used cutting-edge technologies and computer programs to create the perfect
+                                combination of animal genes and mechanics,
+                                allowing them to create unique cyber-creatures.
+                            </p>
+                            <p>
+                                Soon, the scientists began applying these technologies to more dangerous animals
+                                such as predators and reptiles in the hope of creating the perfect weapon for military
+                                purposes. However, the experiments got out
+                                of control and the animals began exhibiting extraordinary aggression and strength. They
+                                started attacking the laboratory personnel
+                                and breaking out.
+                            </p>
+                            <p>
+                                Nevertheless, the scientists were not going to stop, and they continued their
+                                experiments in an attempt to create
+                                even stronger cyber-monsters. They continued to modify the animals' genes by adding new,
+                                more powerful mechanisms, and subjecting them
+                                to more rigorous training and testing.
+                            </p>
+                        </div>
+
+                            <!-- <img class="image" src="./image/section1_1.png" alt=""> -->
+                        
+                    </li>
+                    <li class="history_card">
+                        <img src="./image/section1.png" alt="">
+                        <div class="info_history">
+                            <div class="text_history">
+                                <p>
+                                    The world after the invasion of the cyber-animals looked terrifying. Cities were
+                                    destroyed, leaving only ruins and ash.
+                                    Pollution and chemical emissions became the norm, and the quality of air and water
+                                    became unfit for human life.
+                                </p>
+                                <p>
+                                    Where once there was life and movement, now there was emptiness and silence. Animals and
+                                    insects were displaced
+                                    by the cyber-animals, leaving the planet devoid of nature and living beings. The
+                                    cyber-animals, once created to
+                                    assist humans, had now become a threat to their survival.
+                                </p>
+                                <p>
+                                    Humanity was forced to start over. They began to restore and recreate what had been
+                                    destroyed, and to seek new ways
+                                    of survival in this new, devastated world.
+                                </p>
+                            </div>
+                            <img src="./image/section2_2.png" alt="">
+                        </div>
+    
+                    </li>
+                    <li class="history_card">
+                        <img src="./image/section2.png" alt="">
+                        <div class="info_history">
+                            <div class="text_history">Despite the devastation caused by the cyber-animals, pockets of
+                                humanity survived by banding
+                                together in factions. These groups pooled their resources and knowledge to fend off the
+                                cyber-threat, while also seeking
+                                to harness the power of the cyber-animals for their own purposes.
+                            </div>
+                            <img src="./image/section3_3.png" alt="">
+                        </div>
+                    </li>
+                    <li class="history_card">
+                        <img src="./image/section3.png" alt="">
+                        <div class="info_history">
+                            <img src="./image/section4_4.png" alt="">
+                            <div class="text_history">
+                                <p>
+                                    Some factions saw the cyber-animals as valuable assets and began to use them as their
+                                    own army.
+                                    They modified the cyber-animals to enhance their combat effectiveness and used them in
+                                    battles against other factions
+                                    that threatened their survival.
+                                </p>
+                                <p>
+                                    As the cyber-animals continued to spread across the planet, different factions fought
+                                    against each other for control over them. Some factions collaborated to destroy them,
+                                    while others used the cyber-animals
+                                    for their own personal gain.
+                                </p>
+                            </div>
+                        </div>
+    
+                    </li>
+                </ul>
             </div>
-            <div class="text_item">
-                <h3 class="item item_healer">Healer</h3>
-                <p class="item_info">She can use the ability "Restoration" to restore the health of herself or allied creatures.</p>
+        </section>
+
+        <section class="card_mob">
+            <div class="container">
+                <h2 id="cards" class="cards">Ca<span>r</span>ds</h2>
+                <ul class="button_menu">
+                    <li class="button_list">
+                        <button onclick="myImg()" id="robots" class="button_item">robots</button>
+                    </li>
+                    <li class="button_list">
+                        <button id="pets" class="button_item">Pets</button>
+                    </li>
+                    <li class="button_list">
+                        <button id="toothy" class="button_item">toothy</button>
+                    </li>
+                    <li class="button_list">
+                        <button id="mammals" class="button_item">mammals</button>
+                    </li>
+                    <li class="button_list">
+                        <button class="button_item">all</button>
+                    </li>
+                </ul>
+                <ul id="all_card" class="card_item">
+                    <li class="card_list" id="0">
+                        <div class="card_thumb">
+                            <img class="card_list_img" src="./image/card.png" alt="">
+                        </div>
+                        <h3 class="name">Crocodile</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">8</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="1">
+                        <img class="card_list_img" src="./image/card-1.png" alt="">
+                        <div class="cristal_num">
+                            <h3 class="name">Bear</h3>
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral_sec">10</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red_sec">10</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">9</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="2">
+                        <img class="card_list_img" src="./image/card-2.png" alt="">
+                        <div class="cristal_num">
+                            <h3 class="name">Alpaca</h3>
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">4</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">3</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="3">
+                        <img class="card_list_img" src="./image/card-3.png" alt="">
+                        <h3 class="name">Shark</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">9</p>
+                            <div class="red_num">
+                            </div>
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">7</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">9</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="4">
+                        <img class="card_list_img" src="./image/card-4.png" alt="">
+                        <h3 class="name">Tiger</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral_sec">16</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">8</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple_sec">16</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="5">
+                        <img class="card_list_img" src="./image/card-5.png" alt="">
+                        <h3 class="name">Owl</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">6</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">4</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">4</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="6">
+                        <img class="card_list_img" src="./image/card-6.png" alt="">
+                        <h3 class="name">Wolf</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">9</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">7</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple_sec">16</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="7">
+                        <img class="card_list_img" src="./image/card-7.png" alt="">
+                        <h3 class="name">Hamster</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">3</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">2</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">4</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="8">
+                        <img class="card_list_img" src="./image/card-8.png" alt="">
+                        <h3 class="name">Cat</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">6</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">6</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">9</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="9">
+                        <img class="card_list_img" src="./image/card-9.png" alt="">
+                        <h3 class="name">Eagle</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">7</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="10">
+                        <img class="card_list_img" src="./image/card-10.png" alt="">
+                        <h3 class="name">Deer</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">7</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="11">
+                        <img class="card_list_img" src="./image/card-11.png" alt="">
+                        <h3 class="name">Scorpion </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">7</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">6</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">6</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="12">
+                        <img class="card_list_img" src="./image/card-12.png" alt="">
+                        <h3 class="name">Hippopotamus </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">8</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">9</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">8</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="13">
+                        <img class="card_list_img" src="./image/card-13.png" alt="">
+                        <h3 class="name">Orca </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">8</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">9</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="14">
+                        <img class="card_list_img" src="./image/card-14.png" alt="">
+                        <h3 class="name">Lion </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral_sec">16</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">9</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple_sec">16</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="15">
+                        <img class="card_list_img" src="./image/card-15.png" alt="">
+                        <h3 class="name">Dog </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">8</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="16">
+                        <img class="card_list_img" src="./image/card-16.png" alt="">
+                        <h3 class="name">Dolphin </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">8</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">7</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="17">
+                        <img class="card_list_img" src="./image/card-17.png" alt="">
+                        <h3 class="name">Boar </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">8</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">7</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="18">
+                        <img class="card_list_img" src="./image/card-18.png" alt="">
+                        <h3 class="name">Piranha </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">5</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">3</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">6</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="19">
+                        <img class="card_list_img" src="./image/card-19.png" alt="">
+                        <h3 class="name">Penguin </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">3</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">4</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">2</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="20">
+                        <img class="card_list_img" src="./image/card-20.png" alt="">
+                        <h3 class="name">Fox </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">5</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">6</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">5</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="21">
+                        <img class="card_list_img" src="./image/card-21.png" alt="">
+                        <h3 class="name">Frog </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">3</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">3</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">2</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="22">
+                        <img class="card_list_img" src="./image/card-22.png" alt="">
+                        <h3 class="name">Mongoose </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">5</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">5</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="23">
+                        <img class="card_list_img" src="./image/card-23.png" alt="">
+                        <h3 class="name">Ram </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">8</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="24">
+                        <img class="card_list_img" src="./image/card-24.png" alt="">
+                        <h3 class="name">Giraffe </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">8</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">7</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="25">
+                        <img class="card_list_img" src="./image/card-25.png" alt="">
+                        <h3 class="name">Hyena </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral_sec">16</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red_sec">10</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">9</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="26">
+                        <img class="card_list_img" src="./image/card-26.png" alt="">
+                        <h3 class="name">Mosquito </h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">2</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">1</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">1</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="27">
+                        <img class="card_list_img" src="./image/card-27.png" alt="">
+                        <h3 class="name">Whale</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">9</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">8</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">9</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="28">
+                        <img class="card_list_img" src="./image/card-28.png" alt="">
+                        <h3 class="name">Raccoon</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">5</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">5</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">4</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="29">
+                        <img class="card_list_img" src="./image/card-29.png" alt="">
+                        <h3 class="name">panda</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">6</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">6</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">4</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="30">
+                        <img class="card_list_img" src="./image/card-30.png" alt="">
+                        <h3 class="name">rhinoceros</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral">9</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red_sec">10</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple">9</p>
+                        </div>
+                    </li>
+                    <li class="card_list" id="31">
+                        <img class="card_list_img" src="./image/card-31.png" alt="">
+                        <h3 class="name">PUMA</h3>
+                        <div class="cristal_num">
+                            <img class="card_list_cristal" src="./image/cristal.png" alt="">
+                            <p class="numeral_sec">10</p>
+                        </div>
+                        <div class="red_num">
+                            <img class="red_drop" src="./image/red_drop.png" alt="">
+                            <p class="num_red">8</p>
+                        </div>
+                        <div class="purple_num">
+                            <img class="purple_drop" src="./image/purple_drop.png" alt="">
+                            <p class="num_purple_sec">10</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            
-        </li>
-        <li class="card">
-            <div class="people_card">
-                <div class="card_border_hunter">
-                    <img class="hunter" src="./image/card-1.jpg" alt="">
-                    <svg class="hunter_top_vector"><use href="./image/symbol-defs.svg#icon-Vector2"></use></svg>
-                    <svg class="hunter_bottom_vector"><use href="./image/symbol-defs.svg#icon-Vector2_2"></use></svg>
+        </section>
+
+        <section class="end_block">
+            <div class="picture_block"><img class="man" src="./image/man.png" alt=""></div>
+            <div class="picture_block"><img class="woman" src="./image/woman.png" alt=""></div>
+            <div class="text_block">
+                <div class="end_block_text">
+                    <h2 id="download" class="end_block_title">Fight your opponent in a fight for life and death</h2>
                 </div>
+                <div class="end_block_text"><button class="end_block_button_list " id="data-modal-open"
+                        type="button">Download a game</button></div>
             </div>
-            <div class="text_item">
-                <h3 class="item item_hunter">Hunter</h3>
-                <p class="item_info ">He can place a "Trap" on the battlefield that deals damage to enemy creatures when they enter play or attack the Hunter.</p>
-            </div>
-        </li>
-        <li class="card">
-            <div class="people_card">
-                <div class="card_border_shadow">
-                    <img class="shadow" src="./image/card-2.jpg" alt="">
-                    <svg class="shadow_bottom_vector"><use href="./image/symbol-defs.svg#icon-Vector3"></use></svg>
-                </div>
-            </div>
-            <div class="text_item">
-                <h3 class="item item_shadow">Shadow</h3>
-                <p class="item_info">She can use "Dark Shield" which protects her from magical attacks and absorbs some of the damage received.</p>
-            </div>
-        </li>
-        <li class="card">
-            <div class="people_card">
-                <div class="card_border_pirate">
-                    <img class="pirate" src="./image/card-3.jpg" alt="">
-                    <svg class="pirate_bottom_vector"><use href="./image/symbol-defs.svg#icon-Vector4_2"></use></svg>
-                    <svg class="pirate_top_vector"><use href="./image/symbol-defs.svg#icon-Vector4_1"></use></svg>
-                </div>
-            </div>
-            <div class="text_item_another">
-                <h3 class="item item_pirate">Pirate</h3>
-                <p class="item_info">He has the ability to "Steal", which allows him to steal a card from the opponent's deck or hand."</p>
-            </div>
-        </li>
-        <li class="card">
-            <div class="people_card">
-                <div class="card_border_arrow">
-                    <img class="arrow" src="./image/card-5.jpg" alt="">
-                    <svg class="arrow_top_vector"><use href="./image/symbol-defs.svg#icon-Vector5"></use></svg>
-                    <svg class="arrow_bottom_vector"><use href="./image/symbol-defs.svg#icon-Vector5_2"></use></svg>
-                </div>
-            </div>
-            <div class="text_item_another">
-                <h3 class="item item_arrow">Arrow</h3>
-                <p class="item_info">She can use "Slow Arrow", which slows down the movement of her opponents and weakens their attacks.</p>
-            </div>
-        </li>
-        <li class="card">
-            <div class="people_card">
-                <div class="card_border_ghost">
-                    <img class="ghost" src="./image/card-4.jpg" alt="">
-                    <svg class="ghost_top_vector"><use href="./image/symbol-defs.svg#icon-Vector6"></use></svg>
-                    <svg class="ghost_bottom_vector"><use href="./image/symbol-defs.svg#icon-Vector6_2"></use></svg>
-                </div>
-            </div>
-            <div class="text_item_another">
-                <h3 class="item item_ghost">Ghost</h3>
-                <p class="item_info">He can use "Phantom Curse" to place a curse on the opponent's cards, reducing their effectiveness when they are used.</p>
-            </div>
-        </li>
-    </ul>
-</section>
-<section class="history container">
-<h2 id="history" class="story">Hi<span>s</span>tor<span>y</span></h2>
-<ul class="history_item">
-    <li class="history_card">
-        <img src="./image/section.png" alt="">
-        <div class="info_history">
-            <div class="text_history">
-                <p>
-                    In 2060, a group of scientists began conducting secret experiments on genetically modifying animals in an underground laboratory. 
-                    They used cutting-edge technologies and computer programs to create the perfect combination of animal genes and mechanics, 
-                    allowing them to create unique cyber-creatures. 
-                </p>
-                <p>
-                    Soon, the scientists began applying these technologies to more dangerous animals 
-                    such as predators and reptiles in the hope of creating the perfect weapon for military purposes. However, the experiments got out 
-                    of control and the animals began exhibiting extraordinary aggression and strength. They started attacking the laboratory personnel
-                    and breaking out. 
-                </p>
-                <p>
-                    Nevertheless, the scientists were not going to stop, and they continued their experiments in an attempt to create
-                    even stronger cyber-monsters. They continued to modify the animals' genes by adding new, more powerful mechanisms, and subjecting them
-                    to more rigorous training and testing.
-                </p>
-            </div>
-                <img class="image" src="./image/section1_1.png" alt="">
-        </div>
-    </li>
-    <li class="history_card">
-        <img src="./image/section1.png" alt="">
-        <div class="info_history">
-            <div class="text_history">
-                <p>
-                    The world after the invasion of the cyber-animals looked terrifying. Cities were destroyed, leaving only ruins and ash. 
-                    Pollution and chemical emissions became the norm, and the quality of air and water became unfit for human life.
-                </p>
-                <p>
-                    Where once there was life and movement, now there was emptiness and silence. Animals and insects were displaced
-                    by the cyber-animals, leaving the planet devoid of nature and living beings. The cyber-animals, once created to
-                    assist humans, had now become a threat to their survival.
-                </p>
-                <p>
-                    Humanity was forced to start over. They began to restore and recreate what had been destroyed, and to seek new ways
-                    of survival in this new, devastated world.
-                </p>
-            </div>
-            <img src="./image/section2_2.png" alt="">
-        </div>
-        
-    </li>
-    <li class="history_card">
-        <img src="./image/section2.png" alt="">
-        <div class="info_history">
-            <div class="text_history">Despite the devastation caused by the cyber-animals, pockets of humanity survived by banding 
-                together in factions. These groups pooled their resources and knowledge to fend off the cyber-threat, while also seeking
-                 to harness the power of the cyber-animals for their own purposes.
-            </div>
-            <img src="./image/section3_3.png" alt="">
-        </div>
-    </li>
-    <li class="history_card">
-        <img src="./image/section3.png" alt="">
-        <div class="info_history">
-            <img src="./image/section4_4.png" alt="">
-            <div class="text_history">
-                <p>
-                    Some factions saw the cyber-animals as valuable assets and began to use them as their own army. 
-                    They modified the cyber-animals to enhance their combat effectiveness and used them in battles against other factions 
-                    that threatened their survival.
-                </p> 
-                <p>
-                    As the cyber-animals continued to spread across the planet, different factions fought 
-                    against each other for control over them. Some factions collaborated to destroy them, while others used the cyber-animals 
-                    for their own personal gain.
-                </p>
-                </div>
-        </div>
-        
-    </li>
-</ul>
-</section>
-<section class="card_mob">
-    <p id="cards" class="cards">Ca<span>r</span>ds</p>
-    <ul class="button_menu">
-            <li class="button_list">
-                <button onclick="myImg()" id="robots" class="button_item">robots</button>
-            </li>
-            <li class="button_list">
-                <button id="pets" class="button_item">Pets</button>
-            </li>
-            <li class="button_list">
-                <button id="toothy" class="button_item">toothy</button>
-            </li>
-            <li class="button_list">
-                <button id="mammals" class="button_item">mammals</button>
-            </li>
-            <li class="button_list">
-                <button class="button_item_list">all</button>
-            </li>
-    </ul>
-    <ul id="all_card" class="card_item">
-        <li class="card_list" id="0">
-            <img class="card_list_img"  src="./image/card.png" alt="">
-                <h3 class="name">Crocodile</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">8</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list" id="1">
-            <img class="card_list_img" src="./image/card-1.png" alt="">
-                <div class="cristal_num">
-                    <h3 class="name">Bear</h3>
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral_sec">10</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red_sec">10</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">9</p>
-                </div>
-        </li>
-        <li class="card_list"id="2">
-            <img class="card_list_img"  src="./image/card-2.png" alt="">
-                <div class="cristal_num">
-                    <h3 class="name">Alpaca</h3>
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">4</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">3</p>
-                </div>
-        </li>
-        <li class="card_list"id="3">
-            <img class="card_list_img"  src="./image/card-3.png" alt="">
-            <h3 class="name">Shark</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">9</p>
-                <div class="red_num">
-                    </div>
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">7</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">9</p>
-                </div>
-        </li>
-        <li class="card_list"id="4">
-            <img class="card_list_img"  src="./image/card-4.png" alt="">
-            <h3 class="name">Tiger</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral_sec">16</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">8</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple_sec">16</p>
-                </div>
-        </li>
-        <li class="card_list" id="5">
-            <img class="card_list_img" src="./image/card-5.png" alt="">
-            <h3 class="name">Owl</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">6</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">4</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">4</p>
-                </div>
-        </li>
-        <li class="card_list" id="6">
-            <img class="card_list_img" src="./image/card-6.png" alt="">
-            <h3 class="name">Wolf</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">9</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">7</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple_sec">16</p>
-                </div>
-        </li>
-        <li class="card_list" id="7">
-            <img class="card_list_img" src="./image/card-7.png" alt="">
-            <h3 class="name">Hamster</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">3</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">2</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">4</p>
-                </div>
-        </li>
-        <li class="card_list" id="8">
-            <img class="card_list_img" src="./image/card-8.png" alt="">
-            <h3 class="name">Cat</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">6</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">6</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">9</p>
-                </div>
-        </li>
-        <li class="card_list" id="9">
-            <img class="card_list_img" src="./image/card-9.png" alt="">
-            <h3 class="name">Eagle</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">7</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list" id="10">
-            <img class="card_list_img" src="./image/card-10.png" alt="">
-            <h3 class="name">Deer</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">7</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list" id="11">
-            <img class="card_list_img" src="./image/card-11.png" alt="">
-            <h3 class="name">Scorpion </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">7</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">6</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">6</p>
-                </div>
-        </li>
-        <li class="card_list" id="12">
-            <img class="card_list_img" src="./image/card-12.png" alt="">
-            <h3 class="name">Hippopotamus </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">8</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">9</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">8</p>
-                </div>
-        </li>
-        <li class="card_list" id="13">
-            <img class="card_list_img" src="./image/card-13.png" alt="">
-            <h3 class="name">Orca </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">8</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">9</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list" id="14">
-            <img class="card_list_img" src="./image/card-14.png" alt="">
-            <h3 class="name">Lion </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral_sec">16</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">9</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple_sec">16</p>
-                </div>
-        </li>
-        <li class="card_list" id="15">
-            <img class="card_list_img" src="./image/card-15.png" alt="">
-            <h3 class="name">Dog </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">8</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list" id="16">
-            <img class="card_list_img" src="./image/card-16.png" alt="">
-            <h3 class="name">Dolphin </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">8</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">7</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list" id="17">
-            <img class="card_list_img" src="./image/card-17.png" alt="">
-            <h3 class="name">Boar </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">8</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">7</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list" id="18">
-            <img class="card_list_img" src="./image/card-18.png" alt="">
-            <h3 class="name">Piranha </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">5</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">3</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">6</p>
-                </div>
-        </li>
-        <li class="card_list" id="19">
-            <img class="card_list_img" src="./image/card-19.png" alt="">
-            <h3 class="name">Penguin </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">3</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">4</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">2</p>
-                </div>
-        </li>
-        <li class="card_list" id="20">
-            <img class="card_list_img" src="./image/card-20.png" alt="">
-            <h3 class="name">Fox </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">5</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">6</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">5</p>
-                </div>
-        </li>
-        <li class="card_list" id="21">
-            <img class="card_list_img" src="./image/card-21.png" alt="">
-            <h3 class="name">Frog </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">3</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">3</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">2</p>
-                </div>
-        </li>
-        <li class="card_list" id="22">
-            <img class="card_list_img" src="./image/card-22.png" alt="">
-            <h3 class="name">Mongoose </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">5</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">5</p>
-                </div>
-        </li>
-        <li class="card_list" id="23">
-            <img class="card_list_img" src="./image/card-23.png" alt="">
-            <h3 class="name">Ram </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">8</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list" id="24">
-            <img class="card_list_img" src="./image/card-24.png" alt="">
-            <h3 class="name">Giraffe </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">8</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">7</p>
-                </div>
-        </li>
-        <li class="card_list"id="25">
-            <img class="card_list_img"  src="./image/card-25.png" alt="">
-            <h3 class="name">Hyena </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral_sec">16</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red_sec">10</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">9</p>
-                </div>
-        </li>
-        <li class="card_list" id="26">
-            <img class="card_list_img" src="./image/card-26.png" alt="">
-            <h3 class="name">Mosquito  </h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">2</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">1</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">1</p>
-                </div>
-        </li>
-        <li class="card_list" id="27">
-            <img class="card_list_img" src="./image/card-27.png" alt="">
-            <h3 class="name">Whale</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">9</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">8</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">9</p>
-                </div>
-        </li>
-        <li class="card_list" id="28">
-            <img class="card_list_img" src="./image/card-28.png" alt="">
-            <h3 class="name">Raccoon</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">5</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">5</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">4</p>
-                </div>
-        </li>
-        <li class="card_list" id="29">
-            <img class="card_list_img" src="./image/card-29.png" alt="">
-            <h3 class="name">panda</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">6</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">6</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">4</p>
-                </div>
-        </li>
-        <li class="card_list" id="30">
-            <img class="card_list_img" src="./image/card-30.png" alt="">
-            <h3 class="name">rhinoceros</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral">9</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red_sec">10</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple">9</p>
-                </div>
-        </li>
-        <li class="card_list" id="31">
-            <img class="card_list_img" src="./image/card-31.png" alt="">
-            <h3 class="name">PUMA</h3>
-                <div class="cristal_num">
-                    <img class="card_list_cristal" src="./image/cristal.png" alt="">
-                    <p class="numeral_sec">10</p>
-                </div>
-                <div class="red_num">
-                    <img class="red_drop" src="./image/red_drop.png" alt="">
-                    <p class="num_red">8</p>
-                </div>
-                <div class="purple_num">
-                    <img class="purple_drop" src="./image/purple_drop.png" alt="">
-                    <p class="num_purple_sec">10</p>
-                </div>
-        </li>
-    </ul>
-</section>
-<section class="end_block">
-        <div class="picture_block"><img class="man" src="./image/man.png" alt=""></div>
-        <div class="picture_block"><img class="woman" src="./image/woman.png" alt=""></div>
-    <div class="text_block">
-        <div class="end_block_text"><h2 id="download" class="end_block_title">Fight your opponent in a fight for life and death</h2></div>
-        <div class="end_block_text"><button class="end_block_button_list " id="data-modal-open" type="button">Download a game</button></div>
-    </div>
-</section>
-</main>
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer_text">
             <p class="footer_text_first">New Era of Card Battles</p>
@@ -764,48 +826,65 @@
             <p class="footer_info_year">2023</p>
         </ul>
         <ul class="social">
-            <li class="social_item"><a class="networks" href="https://www.instagram.com/"><svg class="name"><use href="./image/symbol-defs.svg#icon-instagram-2"></use></svg></a></li>
-            <li class="social_item"><a class="networks" href="https://www.twitch.tv/"><svg class="name"><use href="./image/symbol-defs.svg#icon-twitch"></use></svg></a></li>
-            <li class="social_item"><a class="networks" href="https://www.facebook.com/"><svg class="name"><use href="./image/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-            <li class="social_item"><a class="networks" href="https://www.tiktok.com/"><svg class="name"><use href="./image/symbol-defs.svg#icon-tiktok"></use></svg></a></li>
-            <li class="social_item"><a class="networks" href="https://twitter.com/"><svg class="name"><use href="./image/symbol-defs.svg#icon-twitter"></use></svg></a></li>
-            <li class="social_item"><a class="networks" href="https://www.youtube.com/"><svg class="name"><use href="./image/symbol-defs.svg#icon-youtube"></use></svg></a></li>
-            <li class="social_item"><a class="networks" href="https://discord.com/"><svg class="name"><use href="./image/symbol-defs.svg#icon-discord"></use></svg></a></li>
-            <div  class="social_arrow_item"><a href="#header"><svg class="name_arrow"><use href="./image/symbol-defs.svg#icon-arrow-up"></use></svg></a></div>
+            <li class="social_item"><a class="networks" href="https://www.instagram.com/"><svg class="name">
+                        <use href="./image/symbol-defs.svg#icon-instagram-2"></use>
+                    </svg></a></li>
+            <li class="social_item"><a class="networks" href="https://www.twitch.tv/"><svg class="name">
+                        <use href="./image/symbol-defs.svg#icon-twitch"></use>
+                    </svg></a></li>
+            <li class="social_item"><a class="networks" href="https://www.facebook.com/"><svg class="name">
+                        <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                    </svg></a></li>
+            <li class="social_item"><a class="networks" href="https://www.tiktok.com/"><svg class="name">
+                        <use href="./image/symbol-defs.svg#icon-tiktok"></use>
+                    </svg></a></li>
+            <li class="social_item"><a class="networks" href="https://twitter.com/"><svg class="name">
+                        <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                    </svg></a></li>
+            <li class="social_item"><a class="networks" href="https://www.youtube.com/"><svg class="name">
+                        <use href="./image/symbol-defs.svg#icon-youtube"></use>
+                    </svg></a></li>
+            <li class="social_item"><a class="networks" href="https://discord.com/"><svg class="name">
+                        <use href="./image/symbol-defs.svg#icon-discord"></use>
+                    </svg></a></li>
+            <div class="social_arrow_item"><a href="#header"><svg class="name_arrow">
+                        <use href="./image/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg></a></div>
         </ul>
-        </footer>
-        <div class="modal"> 
-            <div class="modal_main">
-                <button class="modal_close" href="#">
-                    <svg class="close" width="18" height="18">
-                        <use href="./image/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
-                    </svg>
-                </button>
-                <h2 class="modal_title">Leave your details, we will call you back</h2>
-                <form class="modal_form">
-                        <div class="modal__input-wrapper">
-                            <label class="modal__label" for="name">Name</label>
-                            <input class="modal__input" id="name" type="text" placeholder="">
-                        </div>       
-                        <div class="modal__input-wrapper">
-                            <label class="modal__label" for="phone">Phone</label>
-                            <input class="modal__input" id="phone" type="tel" placeholder="">
-                        </div>
-                        <div class="modal__input-wrapper">
-                            <label class="modal__label" for="email">E-mail</label>
-                            <input class="modal__input" id="email" type="text" placeholder="">
-                        </div>
-                            <label class="modal__label">Comment</label>
-                            <div class="coment">
-                            <textarea cols="30" rows="10" placeholder="Enter the text"></textarea>
-                            </div>
-                            <button class="send" type="submit">Forward</button>
-                </form>                    
-            </div>
+    </footer>
+    <div class="modal">
+        <div class="modal_main">
+            <button class="modal_close" href="#">
+                <svg class="close" width="18" height="18">
+                    <use href="./image/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+            <h2 class="modal_title">Leave your details, we will call you back</h2>
+            <form class="modal_form">
+                <div class="modal__input-wrapper">
+                    <label class="modal__label" for="name">Name</label>
+                    <input class="modal__input" id="name" type="text" placeholder="">
+                </div>
+                <div class="modal__input-wrapper">
+                    <label class="modal__label" for="phone">Phone</label>
+                    <input class="modal__input" id="phone" type="tel" placeholder="">
+                </div>
+                <div class="modal__input-wrapper">
+                    <label class="modal__label" for="email">E-mail</label>
+                    <input class="modal__input" id="email" type="text" placeholder="">
+                </div>
+                <label class="modal__label">Comment</label>
+                <div class="coment">
+                    <textarea cols="30" rows="10" placeholder="Enter the text"></textarea>
+                </div>
+                <button class="send" type="submit">Forward</button>
+            </form>
         </div>
-        
+    </div>
+
 
     <script src="./modal.js"></script>
     <script src="./button.js"></script>
 </body>
+
 </html>
