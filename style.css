@@ -226,7 +226,31 @@ img {
     border-radius: 40px;
     border: 3px solid var(--violet, #99449F);
 }
-
+.character__img_hunter{
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-hunter-card, #4D098C);
+}
+.character__img_shadow {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-shadow-card, #590E7B);
+}
+.character__img_pirate {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-pirate-card, #C300E3);
+}
+.character__img_arrow {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-arrow-card, #FF4AFF);
+}
+.character__img_ghost {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-ghost-card, #7B149E);
+}
 .character__thumb {
     border-radius: 40px;
     overflow: hidden;
@@ -257,11 +281,6 @@ img {
     flex-direction: column;
 }
 
-
-.text_item {
-    margin-top: 27px;
-}
-
 .text_item_another {
     margin-top: 27px;
 }
@@ -270,10 +289,6 @@ img {
     margin-bottom: 93px;
 }
 
-.item_info {
-    
-
-}
 
 .card img {
     display: block;
@@ -441,25 +456,14 @@ img {
     left: -7px;
 }
 
-
-.people_card {
-    position: relative;
-}
-
 .card_border_healer {
     overflow: hidden;
 }
 
-.card_border_healer:hover img {
+.character__thumb:hover img {
     transition: transform 0.5s ease;
     transform-origin: top;
     transform: scale(150%);
-}
-
-.card_border_healer {
-    border-radius: 20px;
-    border: 3px solid var(--cards-healer-card, #D616A1);
-
 }
 
 .healer_left_vector {
@@ -484,25 +488,10 @@ img {
     border-radius: 20px;
 }
 
-.card_border_hunter {
-    overflow: hidden;
-}
-
-.card_border_hunter:hover img {
-    transition: transform 0.5s;
-    transform-origin: top;
-    transform: scale(150%);
-}
-
-.card_border_hunter {
-    border-radius: 20px;
-    border: 3px solid var(--cards-hunter-card, #4D098C);
-}
-
 .hunter_top_vector {
     position: absolute;
     right: -5px;
-    top: -5px;
+    top: -10px;
     width: 105px;
     height: 121px;
     fill: #131313;
@@ -517,24 +506,7 @@ img {
     fill: #131313;
 }
 
-.shadow {
-    border-radius: 20px;
-}
 
-.card_border_shadow {
-    overflow: hidden;
-}
-
-.card_border_shadow:hover img {
-    transition: transform 0.5s;
-    transform-origin: top;
-    transform: scale(150%);
-}
-
-.card_border_shadow {
-    border-radius: 20px;
-    border: 3px solid var(--cards-shadow-card, #590E7B);
-}
 
 .shadow_bottom_vector {
     position: absolute;
@@ -545,24 +517,7 @@ img {
     fill: #131313;
 }
 
-.pirate {
-    border-radius: 20px;
-}
 
-.card_border_pirate {
-    overflow: hidden;
-}
-
-.card_border_pirate:hover img {
-    transition: transform 0.5s;
-    transform-origin: top;
-    transform: scale(150%);
-}
-
-.card_border_pirate {
-    border-radius: 20px;
-    border: 3px solid var(--cards-pirate-card, #C300E3);
-}
 
 .pirate_bottom_vector {
     position: absolute;
@@ -575,35 +530,17 @@ img {
 
 .pirate_top_vector {
     position: absolute;
-    left: -5px;
+    left: -10px;
     top: 149px;
     width: 61px;
     height: 131px;
     fill: #131313;
 }
 
-.arrow {
-    border-radius: 20px;
-}
-
-.card_border_arrow {
-    overflow: hidden;
-}
-
-.card_border_arrow:hover img {
-    transition: transform 0.5s;
-    transform-origin: top;
-    transform: scale(150%);
-}
-
-.card_border_arrow {
-    border-radius: 20px;
-    border: 3px solid var(--cards-arrow-card, #FF4AFF);
-}
 
 .arrow_top_vector {
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 21px;
     width: 138px;
     height: 36px;
@@ -612,36 +549,18 @@ img {
 
 .arrow_bottom_vector {
     position: absolute;
-    left: -2px;
+    left: -5px;
     bottom: -10px;
     width: 94px;
     height: 91.5px;
     fill: #131313;
 }
 
-.ghost {
-    border-radius: 20px;
-}
-
-.card_border_ghost {
-    overflow: hidden;
-}
-
-.card_border_ghost:hover img {
-    transition: transform 0.5s;
-    transform-origin: top;
-    transform: scale(150%);
-}
-
-.card_border_ghost {
-    border-radius: 20px;
-    border: 3px solid var(--cards-ghost-card, #7B149E);
-}
 
 .ghost_top_vector {
     position: absolute;
-    top: 0;
-    right: -2px;
+    top: -5px;
+    right: -5px;
     width: 130px;
     height: 242px;
     fill: #131313;
@@ -649,82 +568,12 @@ img {
 
 .ghost_bottom_vector {
     position: absolute;
-    left: -2px;
+    left: -5px;
     top: 300px;
     width: 34px;
     height: 103.5px;
     fill: #131313;
 }
-
-
-.card:hover .item_healer {
-    color: var(--cards-healer-card, #D616A1);
-    font-family: 'Broken Detroit', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4px;
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover .item_hunter {
-    color: var(--cards-hunter-card, #4D098C);
-    font-family: 'Broken Detroit', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4px;
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover .item_shadow {
-    color: var(--cards-shadow-card, #590E7B);
-    font-family: 'Broken Detroit', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4px;
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover .item_pirate {
-    color: var(--cards-pirate-card, #C300E3);
-    font-family: 'Broken Detroit', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4px;
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover .item_arrow {
-    color: var(--cards-arrow-card, #FF4AFF);
-    text-align: center;
-    font-family: 'Broken Detroit', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4px;
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover .item_ghost {
-    color: var(--cards-ghost-card, #7B149E);
-    font-family: 'Broken Detroit', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4px;
-    transition: 0.3s ease-in-out;
-}
-
-
 
 .story {
     color: var(--white, #FFF);
@@ -765,7 +614,26 @@ img {
     line-height: normal;
     padding: 45px;
 }
-
+.background_section{
+    background-image: url(./image/section1_1.png);
+    width: 820px;
+height: 817px;
+}
+.background_section-2{
+    background-image: url(./image/section2_2.png);
+    width: 820px;
+height: 817px;
+}
+.background_section-3{
+    background-image: url(./image/section3_3.png);
+    width: 820px;
+height: 817px;
+}
+.background_section-4{
+    background-image: url(./image/section4_4.png);
+    width: 820px;
+height: 817px;
+}
 .info_history {
     display: flex;
     align-items: center;
