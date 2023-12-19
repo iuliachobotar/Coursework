@@ -263,24 +263,24 @@
             <div class="container">
                 <h2 id="cards" class="cards">Ca<span>r</span>ds</h2>
                 <ul class="button_menu">
-                    <li class="button_list">
-                        <button onclick="myImg()" id="robots" class="button_item">robots</button>
+                    <li class="button_list" data-filter="robots">
+                        <button class="button_item">robots</button>
                     </li>
-                    <li class="button_list">
-                        <button id="pets" class="button_item">Pets</button>
+                    <li class="button_list" data-filter="pets">
+                        <button class="button_item">Pets</button>
                     </li>
-                    <li class="button_list">
-                        <button id="toothy" class="button_item">toothy</button>
+                    <li class="button_list" data-filter="toothy">
+                        <button class="button_item">toothy</button>
                     </li>
-                    <li class="button_list">
-                        <button id="mammals" class="button_item">mammals</button>
+                    <li class="button_list" data-filter="mammals">
+                        <button class="button_item">mammals</button>
                     </li>
-                    <li class="button_list">
+                    <li class="button_list" data-filter="all">
                         <button class="button_item">all</button>
                     </li>
                 </ul>
                 <ul id="all_card" class="card_item">
-                    <li class="card_list" id="0">
+                    <li class="card_list pets" id="0">
                         <div class="card_thumb">
                             <img class="card_list_img" src="./image/card-0.jpg" width="400" height="603" alt="">
                         </div>
@@ -298,7 +298,7 @@
                             <p class="numeral">7</p>
                         </div>
                     </li>
-                    <li class="card_list" id="1">
+                    <li class="card_list pets" id="1">
                         <div class="card_thumb">
                             <img class="card_list_img" src="./image/card-1-0.jpg" width="400" height="603" alt="">
                         </div>
@@ -861,15 +861,21 @@
         </section>
 
         <section class="end_block">
-            <div class="picture_block"><img class="man" src="./image/man.png" alt=""></div>
-            <div class="picture_block"><img class="woman" src="./image/woman.png" alt=""></div>
+            <div class="picture_block">
+                <img class="man" src="./image/man.png" alt="">
+            </div>
+            <div class="picture_block">
+                <img class="woman" src="./image/woman.png" alt="">
+            </div>
             <div class="text_block">
                 <div class="end_block_text">
                     <h2 id="download" class="end_block_title">Fight your opponent in a fight for life and death</h2>
                 </div>
-                <div class="end_block_text"><button class="end_block_button_list " id="data-modal-open"
-                        type="button">Download a game</button></div>
-            </div>
+                <div class="button_cent">
+                    <div class="end_block_text"><button class="end_block_button_list " id="data-modal-open"
+                            type="button">Download a game</button></div>
+                </div>
+                </div>
         </section>
     </main>
     <footer class="footer">
