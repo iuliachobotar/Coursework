@@ -294,7 +294,9 @@ img {
     display: block;
 }
 
-
+.history .container{
+    padding: 0;
+}
 .history_item {
     display: flex;
     flex-wrap: wrap;
@@ -306,6 +308,11 @@ img {
     display: flex;
     gap: 21px;
 }
+.history_card img,
+.history_card div {
+width: calc(50% - 10px);
+background-repeat: no-repeat;
+}
 
 .history_card:nth-child(even) {
     flex-direction: row-reverse;
@@ -315,7 +322,6 @@ img {
     margin-top: 160px;
     display: flex;
     align-items: baseline;
-    ;
 }
 
 .card {
@@ -550,23 +556,16 @@ img {
 }
 .background_section{
     background-image: url(./image/section1_1.png);
-    width: 820px;
-height: 817px;
 }
 .background_section-2{
     background-image: url(./image/section2_2.png);
-    width: 820px;
-height: 817px;
 }
 .background_section-3{
     background-image: url(./image/section3_3.png);
-    width: 820px;
-height: 817px;
 }
 .background_section-4{
     background-image: url(./image/section4_4.png);
-    width: 820px;
-height: 817px;
+
 }
 .info_history {
     display: flex;
@@ -675,7 +674,6 @@ height: 817px;
     transition: 0.5s;
     cursor: pointer;
 }
-
 .text_history :not(:last-child) {
     margin-bottom: 20px;
 }
@@ -1082,6 +1080,4 @@ height: 817px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
-
-
 
