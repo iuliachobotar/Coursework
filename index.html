@@ -880,10 +880,10 @@
                     <div class="end_block_text">
                         <div class="position_vector">
                             <button class="end_block_button_list " id="data-modal-open" type="button">Download a game</button>
-                            <svg class="vector_3"><use href="./image/symbol-defs.svg#icon-Vector-3-b"></use></svg >
+                            <!-- <svg class="vector_3"><use href="./image/symbol-defs.svg#icon-Vector-3-b"></use></svg >
                             <svg class="vector_2"><use href="./image/symbol-defs.svg#icon-Vector-2-b"></use></svg >
                             <svg class="vector_1"><use href="./image/symbol-defs.svg#icon-Vector-1-b"></use></svg >
-                            <svg class="vector_0"><use href="./image/symbol-defs.svg#icon-Vector-b"></use></svg >
+                            <svg class="vector_0"><use href="./image/symbol-defs.svg#icon-Vector-b"></use></svg > -->
                         </div>
                     </div>
                 </div>
@@ -931,35 +931,38 @@
     </footer>
     <div class="modal">
         <div class="modal_main">
-            <button class="modal_close" href="#">
-                <svg class="close" width="18" height="18">
-                    <use href="./image/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
-                </svg>
-            </button>
-            <h2 class="modal_title">Leave your details, we will call you back</h2>
-            <form class="modal_form">
-                <div class="modal__input-wrapper">
-                    <label class="modal__label" for="name">Name</label>
-                    <input class="modal__input" id="name" type="text" placeholder="">
-                </div>
-                <div class="modal__input-wrapper">
-                    <label class="modal__label" for="phone">Phone</label>
-                    <input class="modal__input" id="phone" type="tel" placeholder="">
-                </div>
-                <div class="modal__input-wrapper">
-                    <label class="modal__label" for="email">E-mail</label>
-                    <input class="modal__input" id="email" type="text" placeholder="">
-                </div>
-                <label class="modal__label">Comment</label>
-                <div class="coment">
-                    <textarea cols="30" rows="10" placeholder="Enter the text"></textarea>
-                </div>
-                <button class="send" type="submit">Forward</button>
-            </form>
+            <div id="form">
+                <button class="modal_close" href="#">
+                    <svg class="close" width="18" height="18">
+                        <use href="./image/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <h2 class="modal_title">Leave your details, we will call you back</h2>
+                <form class="modal_form">
+                    <div class="modal__input-wrapper">
+                        <label class="modal__label" for="name">Name</label>
+                        <input class="modal__input _req" id="name" type="text" placeholder="">
+                    </div>
+                    <div class="modal__input-wrapper">
+                        <label class="modal__label" for="phone">Phone</label>
+                        <input class="modal__input" id="phone" type="tel" placeholder="">
+                    </div>
+                    <div class="modal__input-wrapper">
+                        <label class="modal__label" for="email">E-mail</label>
+                        <input class="modal__input _req _email" id="email" type="text" placeholder="">
+                    </div>
+                    <label class="modal__label">Comment</label>
+                    <div class="coment">
+                        <textarea cols="30" rows="10" placeholder="Enter the text"></textarea>
+                    </div>
+                    <button class="send" type="submit">Forward</button>
+                </form>
+            </div>
         </div>
     </div>
 
 
+    <script src="./scrol.js"></script>
     <script src="./modal.js"></script>
     <script src="./button.js"></script>
 </body>

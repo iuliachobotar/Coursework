@@ -6,7 +6,6 @@
     src: url('./font/broken-detroit.woff2') format('woff2')
 }
 
-
 *,
 ::before,
 ::after {
@@ -412,7 +411,6 @@ img {
     transition: transform 0.5s ease;
     transform-origin: top;
     transform: scale(150%);
-    color: #2196F3;
 }
 
 .healer_left_vector {
@@ -1137,8 +1135,6 @@ top: -12px;
     cursor: pointer;
 }
 
-
-
 .button_item .active{
     color: var(--white, #99449F);
     background: var(--violet, #fff);
@@ -1157,3 +1153,11 @@ animation: fadeIn 0.5s ease;
 .row .card_list.hide{
     display: none;
 }
+
+.modal__input ._error{
+    box-shadow: 0 0 15px #FFF;
+}
+
+
+
+
