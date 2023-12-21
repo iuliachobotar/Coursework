@@ -1,0 +1,135 @@
+.footer {
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    // @media only screen and (min-width: 768px) {
+    //     justify-content: center;
+    // }
+
+    &_text_first {
+        color: #FFF;
+        font-family: 'Lexend Giga', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &_text_second {
+        color: #FFF;
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.92px;
+    }
+    &_text :not(:last-child) {
+        padding-bottom: 16px;
+    }
+    
+    
+    &_info_text {
+        color: var(--white, #FFF);
+        font-family: 'Lexend Giga';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    &_info_year {
+        color: var(--violet, #99449F);
+        font-family: 'Lexend Giga';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &_info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    &_info :not(:last-child) {
+        padding-bottom: 12px;
+    }
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    &_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20%;
+        background-color: #99449F;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+    
+    &_item:hover {
+        background-color: #fff;
+        transition: background-color 0.3s ease-in-out;
+    }
+    &_arrow_item:hover {
+        width: 46px;
+        height: 46px;
+        background-color: #ffffff;
+        transition: 0.5s;
+    }
+    
+    &_arrow_item:hover .name_arrow {
+        fill: #99449F;
+    }
+    &_arrow_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20%;
+        background-color: #99449F;
+        width: 46px;
+        height: 46px;
+    }
+    &_arrow_item a{
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_networks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.name {
+    width: 20px;
+    height: 20px;
+    &_arrow {
+        fill: #FFF;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+.header {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &_menu_link a {
+        color: #fff;
+        font-family: 'Lexend Giga';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &_menu {
+        color: #fff;
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_menu :not(:last-child) {
+        padding-right: 36px;
+    }
+}
+
+
+
+
+
+

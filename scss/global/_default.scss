@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Broken Detroit';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./font/broken-detroit.woff2') format('woff2')
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    background: var(--bg, #131313);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.container {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}

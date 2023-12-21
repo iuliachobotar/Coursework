@@ -1,0 +1,194 @@
+.characters {
+    padding-top: 140px;
+
+    &__title {
+        margin-bottom: 160px;
+        color: var(--white, #FFF);
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 96px;
+        font-weight: 400;
+        letter-spacing: 9.6px;
+        text-align: center;
+    }
+    &__title span {
+        color: var(--violet, #99449F);
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 70px 20px;
+    }
+}
+
+
+
+
+
+.character {
+    max-width: 540px;
+
+    &__img {
+        position: relative;
+        border-radius: 40px;
+        border: 3px solid var(--violet, #99449F);
+    }
+    &__img_hunter {
+        position: relative;
+        border-radius: 40px;
+        border: 3px solid var(--cards-hunter-card, #4D098C);
+    }
+    &__img_shadow {
+        position: relative;
+        border-radius: 40px;
+        border: 3px solid var(--cards-shadow-card, #590E7B);
+    }
+    &__img_pirate {
+        position: relative;
+        border-radius: 40px;
+        border: 3px solid var(--cards-pirate-card, #C300E3);
+    }
+    &__img_arrow {
+        position: relative;
+        border-radius: 40px;
+        border: 3px solid var(--cards-arrow-card, #FF4AFF);
+    }
+    
+    &__img_ghost {
+        position: relative;
+        border-radius: 40px;
+        border: 3px solid var(--cards-ghost-card, #7B149E);
+    }
+    &__thumb {
+        border-radius: 40px;
+        overflow: hidden;
+    }
+    &__text {
+        padding: 25px 35px 0;
+    }
+    &__title {
+        color: var(--white, #FFF);
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    &__desc {
+        color: var(--white, #FFF);
+        text-align: center;
+        font-size: 20px;
+    }
+}
+.character__thumb:hover img {
+    transition: transform 0.5s ease;
+    transform-origin: top;
+    transform: scale(150%);
+}
+
+
+
+.healer_left_vector {
+    position: absolute;
+    left: -5px;
+    bottom: 78px;
+    width: 49px;
+    height: 96px;
+    fill: #131313;
+}
+
+.healer_bottom_vector {
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+    width: 76.5px;
+    height: 64.5px;
+    fill: #131313;
+}
+.hunter_top_vector {
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    width: 105px;
+    height: 121px;
+    fill: #131313;
+}
+
+.hunter_bottom_vector {
+    position: absolute;
+    left: 18px;
+    bottom: -5px;
+    width: 72.5px;
+    height: 37.5px;
+    fill: #131313;
+}
+.shadow_bottom_vector {
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+    width: 137.5px;
+    height: 110.5px;
+    fill: #131313;
+}
+.pirate_bottom_vector {
+    position: absolute;
+    bottom: -3px;
+    left: 208.5px;
+    width: 207px;
+    height: 32px;
+    fill: #131313;
+}
+
+.pirate_top_vector {
+    position: absolute;
+    left: -10px;
+    top: 149px;
+    width: 61px;
+    height: 131px;
+    fill: #131313;
+}
+.arrow_top_vector {
+    position: absolute;
+    top: -5px;
+    right: 21px;
+    width: 138px;
+    height: 36px;
+    fill: #131313;
+}
+
+.arrow_bottom_vector {
+    position: absolute;
+    left: -5px;
+    bottom: -10px;
+    width: 94px;
+    height: 91.5px;
+    fill: #131313;
+}
+
+
+.ghost_top_vector {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 130px;
+    height: 242px;
+    fill: #131313;
+}
+.ghost_bottom_vector {
+    position: absolute;
+    left: -5px;
+    top: 300px;
+    width: 34px;
+    height: 103.5px;
+    fill: #131313;
+}
+
+
+
+
+
+
+
