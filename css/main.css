@@ -1461,7 +1461,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .end_block {
-    padding-top: 650px;
+    padding-top: 270px;
     position: relative;
     padding-bottom: 430px;
   }
@@ -1720,7 +1720,8 @@ img {
   }
   .modal_main {
     position: relative;
-    width: 370px;
+    width: 450px;
+    height: 609px;
     border-radius: 4px;
     background: #131313;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
