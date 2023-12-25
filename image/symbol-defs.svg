@@ -87,5 +87,12 @@
 <symbol id="icon-Vector-b" viewBox="0 0 35 20">
 <path d="M13.2 0.4l-13.2 20h35.2l-14.8-10.4h-4.8l-2.4-6.4v-3.2z"></path>
 </symbol>
+<symbol id="icon-social_top" viewBox="0 0 27 20">
+<path d="M4.444 14.444l-3.333-14.444v-3.333h26.667v23.333l-14.444-5.556h-8.889z"></path>
+</symbol>
+<symbol id="icon-social_bottom" viewBox="0 0 110 20">
+<path d="M22.5 0l-20 20h107.5l-30-10-20-5-27.5 5-10-10z"></path>
+</symbol>
+</symbol>
 </defs>
 </svg>

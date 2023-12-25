@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./font/broken-detroit.woff2") format("woff2");
+  src: url("../font/broken-detroit.woff2") format("woff2");
 }
 *,
 ::before,
@@ -67,8 +67,8 @@ img {
 }
 .header_menu_link a {
   color: #fff;
-  font-family: "Lexend Giga";
-  font-size: 24px;
+  font-family: "Broken Detroit", sans-serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -91,11 +91,35 @@ img {
   padding-right: 36px;
 }
 
+@media (max-width: 480px) {
+  .header_menu_link a {
+    color: #fff;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .header_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .header_menu :not(:last-child) {
+    padding-right: 20px;
+  }
+}
 .footer {
   padding-left: 7%;
   padding-right: 7%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -116,7 +140,7 @@ img {
   letter-spacing: 1.92px;
 }
 .footer_text :not(:last-child) {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .footer_info_text {
   color: var(--white, #FFF);
@@ -140,7 +164,7 @@ img {
   flex-direction: column;
 }
 .footer_info :not(:last-child) {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .social {
@@ -157,6 +181,7 @@ img {
   width: 32px;
   height: 32px;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 .social_item:hover {
   background-color: #fff;
@@ -179,6 +204,7 @@ img {
   background-color: #99449F;
   width: 46px;
   height: 46px;
+  transition: 0.5s ease;
 }
 .social_arrow_item a {
   width: 46px;
@@ -203,9 +229,177 @@ img {
   height: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .footer {
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  .footer_phone {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_text {
+    margin-bottom: 22px;
+  }
+  .footer_text_first {
+    color: #FFF;
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .footer_text_second {
+    color: #FFF;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.28px;
+  }
+  .footer_text :not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .footer_info_text {
+    color: var(--white, #FFF);
+    font-family: "Lexend Giga";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer_info_year {
+    color: var(--violet, #99449F);
+    font-family: "Lexend Giga";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer_info :not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .social_vector_broke {
+    position: relative;
+  }
+  .social_media_top {
+    position: absolute;
+    width: 12px;
+    height: 10.5px;
+    top: -1px;
+    right: -1px;
+    fill: #131313;
+  }
+  .social_media_bottom {
+    position: absolute;
+    width: 21.5px;
+    height: 4px;
+    fill: #131313;
+    bottom: 0;
+  }
+  .social_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    background-color: #99449F;
+    width: 32px;
+    height: 32px;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .social_button {
+    margin-left: 55px;
+    display: flex;
+    gap: 55px;
+  }
+  .social_media_title {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.5s ease;
+  }
+  .social_media {
+    background-color: #99449F;
+    padding: 9px 19px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+  }
+  .social_media:hover {
+    background-color: #FFF;
+  }
+  .social_media:hover .social_media_title {
+    color: #99449F;
+  }
+  .social_item:hover {
+    background-color: #fff;
+    transition: 0.5s ease;
+  }
+  .social_arrow_item:hover {
+    width: 46px;
+    height: 46px;
+    background-color: #ffffff;
+    transition: 0.5s ease;
+  }
+  .social_arrow_item:hover .name_arrow {
+    fill: #99449F;
+  }
+  .social_arrow_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    background-color: #99449F;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s ease;
+  }
+  .social_arrow_item a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social_networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .name {
+    width: 20px;
+    height: 20px;
+  }
+  .name_arrow {
+    fill: #FFF;
+    width: 20px;
+    height: 20px;
+  }
+}
 .tint {
   position: relative;
-  background-image: url("./image/background.png");
+  background-image: url("../image/background.png");
   padding-top: 225px;
   height: 100vh;
 }
@@ -245,43 +439,119 @@ img {
   z-index: 2;
 }
 
-.cristals {
-  padding-top: 160px;
-  position: relative;
+@media screen and (min-width: 480px) {
+  .tint {
+    position: relative;
+    background-image: url("../image/background.png");
+    padding-top: 225px;
+    height: 200vh;
+  }
+  .tint_h2 {
+    color: #FFF;
+    font-family: "Lexend Giga";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -3.48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tint_h1 {
+    position: relative;
+    color: #fff;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tint_picture {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 446px;
+    height: 446px;
+    z-index: 2;
+  }
 }
-.cristals__text {
-  max-width: 1020px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--white, #FFF);
-  text-align: center;
-  font-size: 24px;
+@media screen and (max-width: 1920px) {
+  .cristals {
+    padding-top: 160px;
+    position: relative;
+  }
+  .cristals__text {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 24px;
+  }
+  .cristal_small {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: 21%;
+    left: 17%;
+  }
+  .cristal_big {
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    right: 3%;
+    top: 30%;
+  }
+  .cristal_arm {
+    position: absolute;
+    top: 82%;
+    left: 0;
+    width: 367px;
+    height: 367px;
+  }
 }
-
-.small_cristal {
-  position: absolute;
-  width: 58px;
-  height: 58px;
-  top: 21%;
-  left: 17%;
+@media screen and (min-width: 480px) {
+  .cristals {
+    padding-top: 60px;
+    position: relative;
+  }
+  .cristals__text {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 15px;
+  }
+  .cristal_small {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 3%;
+    left: 92%;
+  }
+  .cristal_big {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 88%;
+    top: 100%;
+  }
+  .cristal_arm {
+    position: absolute;
+    top: 82%;
+    left: 0;
+    width: 1px;
+    height: 1px;
+  }
 }
-
-.big_cristal {
-  position: absolute;
-  width: 123px;
-  height: 123px;
-  right: 3%;
-  top: 30%;
-}
-
-.arm {
-  position: absolute;
-  top: 82%;
-  left: 0;
-  width: 367px;
-  height: 367px;
-}
-
 .characters {
   padding-top: 140px;
 }
@@ -359,6 +629,9 @@ img {
   font-size: 20px;
 }
 
+.character__thumb img {
+  transition: 0.5s ease;
+}
 .character__thumb:hover img {
   transition: transform 0.5s ease;
   transform-origin: top;
@@ -373,7 +646,6 @@ img {
   height: 96px;
   fill: #131313;
 }
-
 .healer_bottom_vector {
   position: absolute;
   right: -10px;
@@ -391,7 +663,6 @@ img {
   height: 121px;
   fill: #131313;
 }
-
 .hunter_bottom_vector {
   position: absolute;
   left: 18px;
@@ -418,7 +689,6 @@ img {
   height: 32px;
   fill: #131313;
 }
-
 .pirate_top_vector {
   position: absolute;
   left: -10px;
@@ -436,7 +706,6 @@ img {
   height: 36px;
   fill: #131313;
 }
-
 .arrow_bottom_vector {
   position: absolute;
   left: -5px;
@@ -454,7 +723,6 @@ img {
   height: 242px;
   fill: #131313;
 }
-
 .ghost_bottom_vector {
   position: absolute;
   left: -5px;
@@ -464,6 +732,178 @@ img {
   fill: #131313;
 }
 
+@media screen and (min-width: 480px) {
+  .characters {
+    padding-top: 80px;
+  }
+  .characters__title {
+    margin-bottom: 60px;
+    color: var(--white, #FFF);
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 6.4px;
+    text-align: center;
+  }
+  .characters__title span {
+    color: var(--violet, #99449F);
+  }
+  .characters__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .character {
+    max-width: 440px;
+  }
+  .character__img {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--violet, #99449F);
+  }
+  .character__img_hunter {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-hunter-card, #4D098C);
+  }
+  .character__img_shadow {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-shadow-card, #590E7B);
+  }
+  .character__img_pirate {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-pirate-card, #C300E3);
+  }
+  .character__img_arrow {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-arrow-card, #FF4AFF);
+  }
+  .character__img_ghost {
+    position: relative;
+    border-radius: 40px;
+    border: 3px solid var(--cards-ghost-card, #7B149E);
+  }
+  .character__thumb {
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  .character__text {
+    padding: 25px 35px 0;
+  }
+  .character__title {
+    color: var(--white, #FFF);
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .character__desc {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 16px;
+  }
+  .character__thumb img {
+    transition: 0.5s ease;
+  }
+  .character__thumb:hover img {
+    transition: transform 0.5s ease;
+    transform-origin: top;
+    transform: scale(150%);
+  }
+  .healer_left_vector {
+    position: absolute;
+    left: -5px;
+    bottom: 78px;
+    width: 49px;
+    height: 96px;
+    fill: #131313;
+  }
+  .healer_bottom_vector {
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+    width: 76.5px;
+    height: 64.5px;
+    fill: #131313;
+  }
+  .hunter_top_vector {
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    width: 105px;
+    height: 121px;
+    fill: #131313;
+  }
+  .hunter_bottom_vector {
+    position: absolute;
+    left: 18px;
+    bottom: -5px;
+    width: 72.5px;
+    height: 37.5px;
+    fill: #131313;
+  }
+  .shadow_bottom_vector {
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+    width: 137.5px;
+    height: 110.5px;
+    fill: #131313;
+  }
+  .pirate_bottom_vector {
+    position: absolute;
+    bottom: -3px;
+    left: 208.5px;
+    width: 207px;
+    height: 32px;
+    fill: #131313;
+  }
+  .pirate_top_vector {
+    position: absolute;
+    left: -10px;
+    top: 149px;
+    width: 61px;
+    height: 131px;
+    fill: #131313;
+  }
+  .arrow_top_vector {
+    position: absolute;
+    top: -5px;
+    right: 21px;
+    width: 138px;
+    height: 36px;
+    fill: #131313;
+  }
+  .arrow_bottom_vector {
+    position: absolute;
+    left: -5px;
+    bottom: -10px;
+    width: 94px;
+    height: 91.5px;
+    fill: #131313;
+  }
+  .ghost_top_vector {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 130px;
+    height: 242px;
+    fill: #131313;
+  }
+  .ghost_bottom_vector {
+    position: absolute;
+    left: -5px;
+    top: 300px;
+    width: 34px;
+    height: 103.5px;
+    fill: #131313;
+  }
+}
 .history {
   padding-top: 200px;
 }
@@ -479,6 +919,11 @@ img {
 .history_card {
   display: flex;
   gap: 21px;
+  flex-direction: column;
+}
+.history_card img {
+  width: 100%;
+  height: auto;
 }
 .history_card img, .history_card div {
   width: calc(50% - 10px);
@@ -493,7 +938,7 @@ img {
   flex-direction: column;
   color: var(--white, #FFF);
   font-family: "Lexend Giga";
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -526,23 +971,103 @@ img {
 }
 
 .background_section {
-  background-image: url(./image/section1_1.png);
+  background-image: url(../image/section1_1.png);
 }
-
 .background_section-2 {
-  background-image: url(./image/section2_2.png);
+  background-image: url(../image/section2_2.png);
 }
-
 .background_section-3 {
-  background-image: url(./image/section3_3.png);
+  background-image: url(../image/section3_3.png);
 }
-
 .background_section-4 {
-  background-image: url(./image/section4_4.png);
+  background-image: url(../image/section4_4.png);
 }
 
+@media screen and (min-width: 480px) {
+  .history {
+    padding-top: 150px;
+  }
+  .history .container {
+    padding: 0;
+  }
+  .history img {
+    width: 100%;
+    height: auto;
+  }
+  .history_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .history_card {
+    display: flex;
+    gap: 21px;
+  }
+  .history_card img, .history_card div {
+    width: calc(50% - 10px);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  .history_card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .history_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white, #FFF);
+    font-family: "Lexend Giga";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 45px;
+  }
+  .history_text :not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .story {
+    color: var(--white, #FFF);
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .story span {
+    color: var(--violet, #99449F);
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+  }
+  .background_section {
+    background-image: url(../image/section1_1.png);
+    background-image: none;
+  }
+  .background_section-2 {
+    background-image: url(../image/section2_2.png);
+    background-image: none;
+  }
+  .background_section-3 {
+    background-image: url(../image/section3_3.png);
+    background-image: none;
+  }
+  .background_section-4 {
+    background-image: url(../image/section4_4.png);
+    background-image: none;
+  }
+}
 .button_list {
-  width: 15%;
+  width: 25%;
 }
 .button_list:last-child {
   width: 100%;
@@ -569,6 +1094,7 @@ img {
   text-transform: uppercase;
   border: 0;
   border-radius: 36px;
+  transition: 0.5s;
   background: var(--violet, #99449F);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 14px 32px 0px rgba(0, 0, 0, 0.1), 0px 58px 58px 0px rgba(0, 0, 0, 0.09), 0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0);
 }
@@ -579,7 +1105,6 @@ img {
 .button_item:hover, .button_item:active {
   color: var(--white, #99449F);
   background: var(--violet, #fff);
-  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -587,16 +1112,68 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
-  margin-top: 160px;
+  margin-top: 60px;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 480px) {
+  .button_list {
+    width: 50%;
+  }
+  .button_list:last-child {
+    width: 100%;
+  }
+  .button_list:last-child .button_item {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button_item {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .button_item {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 36px;
+    transition: 0.5s;
+    background: var(--violet, #99449F);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 14px 32px 0px rgba(0, 0, 0, 0.1), 0px 58px 58px 0px rgba(0, 0, 0, 0.09), 0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0);
+  }
+  .button_item .active {
+    color: var(--white, #99449F);
+    background: var(--violet, #fff);
+  }
+  .button_item:hover, .button_item:active {
+    color: var(--white, #99449F);
+    background: var(--violet, #fff);
+    cursor: pointer;
+  }
+  .button_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+}
 .card_list {
   position: relative;
   border: 3px solid var(--violet, #99449F);
-  border-radius: 40px;
+  border-radius: 10px;
+  width: calc((100% - 105px) / 4);
 }
 .card_list .name {
   color: var(--white, #FFF);
@@ -648,7 +1225,7 @@ img {
 
 .card_thumb {
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .num_cristal {
@@ -703,6 +1280,114 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 480px) {
+  .card_list {
+    position: relative;
+    border: 3px solid var(--violet, #99449F);
+    border-radius: 10px;
+    width: calc((100% - 35px) / 2);
+  }
+  .card_list .name {
+    color: var(--white, #FFF);
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 12px;
+    padding-left: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white, #FFF);
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+  }
+  .cards span {
+    color: var(--violet, #99449F);
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+  }
+  .card_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px 35px;
+    flex-wrap: wrap;
+  }
+  .card_mob {
+    padding-top: 150px;
+  }
+  .card_thumb {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .card_mob img {
+    width: 100%;
+    height: auto;
+  }
+  .num_cristal {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+  }
+  .num_red {
+    position: absolute;
+    z-index: 3;
+    bottom: -50px;
+    right: -40px;
+    width: 96px;
+    height: 96px;
+  }
+  .num_purple {
+    position: absolute;
+    z-index: 3;
+    left: -40px;
+    bottom: -50px;
+    width: 96px;
+    height: 96px;
+  }
+  .numeral {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .row .card_list.show {
+    animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .row .card_list.hide {
+    display: none;
+  }
+}
 .end_block {
   padding-top: 650px;
   position: relative;
@@ -730,6 +1415,7 @@ img {
   text-transform: uppercase;
   padding: 55px 122px;
   border-radius: 36px;
+  transition: 0.5s ease;
   background: var(--violet, #99449F);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 14px 32px 0px rgba(0, 0, 0, 0.1), 0px 58px 58px 0px rgba(0, 0, 0, 0.09), 0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0);
 }
@@ -773,6 +1459,75 @@ img {
   position: relative;
 }
 
+@media screen and (min-width: 480px) {
+  .end_block {
+    padding-top: 650px;
+    position: relative;
+    padding-bottom: 430px;
+  }
+  .end_block_title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 336px;
+    text-transform: uppercase;
+  }
+  .end_block_button_list {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 40px 110px;
+    border-radius: 36px;
+    transition: 0.5s ease;
+    background: var(--violet, #99449F);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 14px 32px 0px rgba(0, 0, 0, 0.1), 0px 58px 58px 0px rgba(0, 0, 0, 0.09), 0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0);
+  }
+  .end_block_button_list:hover {
+    color: #99449F;
+    background-color: #FFF;
+    transition: 0.5s ease;
+  }
+  .end_block_text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .end_block_title {
+    position: relative;
+  }
+  .end_block_button_list {
+    z-index: 5;
+    cursor: pointer;
+    border: none;
+  }
+  .picture_block_woman {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 700px;
+  }
+  .picture_block_man {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 700px;
+  }
+  .text_block :not(:last-child) {
+    margin-bottom: 80px;
+  }
+  .position_vector {
+    position: relative;
+  }
+}
 .modal {
   position: fixed;
   inset: 0;
@@ -820,6 +1575,7 @@ img {
   background-color: #131313;
   cursor: pointer;
   fill: #99449F;
+  transition: 0.5s ease;
 }
 .modal_close:hover {
   fill: #4D098C;
@@ -942,6 +1698,7 @@ img {
   justify-content: center;
   margin: auto;
   margin-top: 20px;
+  transition: 0.5s ease;
 }
 .send:hover {
   border-radius: 4px;
@@ -949,4 +1706,183 @@ img {
   transition: 250ms ease-in;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+  }
+  .modal_main {
+    position: relative;
+    width: 370px;
+    border-radius: 4px;
+    background: #131313;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin: auto;
+    color: #212121;
+    padding: 40px;
+    cursor: default;
+  }
+  .modal_main::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    height: calc(100% + 6px);
+    width: calc(100% + 6px);
+    background: linear-gradient(60deg, #7B149E, #D616A1, #C300E3, #4D098C, #FF4AFF, #590E7B, #99449F, #131313);
+    border-radius: 6px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  .modal_close {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #99449F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #131313;
+    cursor: pointer;
+    fill: #99449F;
+    transition: 0.5s ease;
+  }
+  .modal_close:hover {
+    fill: #4D098C;
+    transition: 250ms ease-in;
+  }
+  .modal_title {
+    margin-bottom: 12px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+  }
+  .modal__input-wrapper {
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .modal__label {
+    display: block;
+    margin-bottom: 4px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.12px;
+  }
+  .modal__input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+    background-color: #252525;
+    color: #FFF;
+    padding: 0 16px;
+  }
+  .modal__input ._error {
+    box-shadow: 0 0 15px #FFF;
+  }
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .coment textarea {
+    outline: none;
+    height: 120px;
+    width: 100%;
+    padding: 12px 16px;
+    resize: none;
+  }
+  .coment textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+    font-family: "Lexend Giga";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    outline: none;
+    background-color: #252525;
+    color: #FFF;
+  }
+  .condition_modal {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .condition_modal > label {
+    color: #757575;
+    font-family: "Lexend Giga";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: 0.42px;
+  }
+  .condition_modal > label a {
+    color: #2196F3;
+    font-family: "Lexend Giga";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+  }
+  .send {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #99449F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-family: "Lexend Giga";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.96px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    transition: 0.5s ease;
+  }
+  .send:hover {
+    border-radius: 4px;
+    background: #4D098C;
+    transition: 250ms ease-in;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=main.css.map */

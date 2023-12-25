@@ -1,5 +1,5 @@
 .button_list {
-    width: 15%;
+    width: 25%;
 
     &:last-child {
         width: 100%;
@@ -28,6 +28,7 @@
         text-transform: uppercase;
         border: 0;
         border-radius: 36px;
+        transition: 0.5s;
         background: var(--violet, #99449F);
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 14px 32px 0px rgba(0, 0, 0, 0.10), 0px 58px 58px 0px rgba(0, 0, 0, 0.09),
             0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0.00);
@@ -41,7 +42,6 @@
     &:active {
         color: var(--white, #99449F);
         background: var(--violet, #fff);
-        transition: 0.5s;
         cursor: pointer;
     }
 }
@@ -50,14 +50,81 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
-    margin-top: 160px;
+    margin-top: 60px;
     margin-bottom: 50px;
 }
 
 
 
 
+
+@media screen and (min-width: 480px) {
+    .button_list {
+        width: 50%;
+    
+        &:last-child {
+            width: 100%;
+        }
+        &:last-child .button_item {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    
+    .button_item {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    
+        & {
+            color: var(--white, #FFF);
+            text-align: center;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            border: 0;
+            border-radius: 36px;
+            transition: 0.5s;
+            background: var(--violet, #99449F);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 14px 32px 0px rgba(0, 0, 0, 0.10), 0px 58px 58px 0px rgba(0, 0, 0, 0.09),
+                0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0.00);
+        }
+        & .active{
+            color: var(--white, #99449F);
+            background: var(--violet, #fff);
+        }
+    
+        &:hover,
+        &:active {
+            color: var(--white, #99449F);
+            background: var(--violet, #fff);
+            cursor: pointer;
+        }
+    }
+    
+    .button_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
 
 

@@ -1,7 +1,8 @@
 .card_list {
     position: relative;
     border: 3px solid var(--violet, #99449F);
-    border-radius: 40px;
+    border-radius: 10px;
+    width: calc((100% - 105px)/4);
 
     & .name {
         color: var(--white, #FFF);
@@ -50,15 +51,17 @@
     gap: 80px 35px;
     flex-wrap: wrap;
 }
+
 .card_mob {
     padding-top: 200px;
 }
+
 .card_thumb {
     overflow: hidden;
-    border-radius: 40px;
+    border-radius: 10px;
 }
 
-.num{
+.num {
     &_cristal {
         position: absolute;
         top: -24px;
@@ -66,6 +69,7 @@
         width: 88px;
         height: 88px;
     }
+
     &_red {
         position: absolute;
         z-index: 3;
@@ -74,7 +78,7 @@
         width: 197px;
         height: 197px;
     }
-    
+
     &_purple {
         position: absolute;
         z-index: 3;
@@ -98,17 +102,152 @@
     font-weight: 400;
 }
 
-.row .card_list.show{
+.row .card_list.show {
     animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    @keyframes fadeIn{
-        0%{
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.row .card_list.hide {
+    display: none;
+}
+
+
+@media screen and (min-width: 480px) {
+    .card_list {
+        position: relative;
+        border: 3px solid var(--violet, #99449F);
+        border-radius: 10px;
+        width: calc((100% - 35px)/2);
+
+
+        & .name {
+            color: var(--white, #FFF);
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-top: 12px;
+            padding-left: 12px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white, #FFF);
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 4.8px;
+
+        & span {
+            color: var(--violet, #99449F);
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.8px;
+        }
+    }
+
+    .card {
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px 35px;
+            flex-wrap: wrap;
+        }
+
+        &_mob {
+            padding-top: 150px;
+        }
+
+        &_thumb {
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+
+    .card_mob img {
+        width: 100%;
+        height: auto;
+    }
+
+    .num {
+        &_cristal {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 40px;
+            height: 40px;
+        }
+
+        &_red {
+            position: absolute;
+            z-index: 3;
+            bottom: -50px;
+            right: -40px;
+            width: 96px;
+            height: 96px;
+        }
+
+        &_purple {
+            position: absolute;
+            z-index: 3;
+            left: -40px;
+            bottom: -50px;
+            width: 96px;
+            height: 96px;
+        }
+    }
+
+
+    .numeral {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--white, #FFF);
+        text-align: center;
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .row .card_list.show {
+        animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+        0% {
             opacity: 0;
         }
-        100%{
-          opacity: 1;  
+
+        100% {
+            opacity: 1;
         }
     }
-    .row .card_list.hide{
+
+    .row .card_list.hide {
         display: none;
     }
+
+}

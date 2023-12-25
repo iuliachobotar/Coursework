@@ -1,38 +1,92 @@
-.cristals {
-    padding-top: 160px;
-    position: relative;
-
-    &__text {
-        max-width: 1020px;
-        margin-left: auto;
-        margin-right: auto;
-        color: var(--white, #FFF);
-        text-align: center;
-        font-size: 24px;
+@media screen and (max-width: 1920px) {
+    .cristals {
+        padding-top: 160px;
+        position: relative;
+    
+        &__text {
+            max-width: 1020px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--white, #FFF);
+            text-align: center;
+            font-size: 24px;
+        }
     }
+    
+    
+    
+    .cristal {
+        
+        &_small {
+            position: absolute;
+            width: 58px;
+            height: 58px;
+            top: 21%;
+            left: 17%;
+        }
+    
+        &_big {
+            position: absolute;
+            width: 123px;
+            height: 123px;
+            right: 3%;
+            top: 30%;
+        }
+        &_arm {
+            position: absolute;
+            top: 82%;
+            left: 0;
+            width: 367px;
+            height: 367px;
+        }
+    }
+    
 }
 
 
 
-.small_cristal {
-    position: absolute;
-    width: 58px;
-    height: 58px;
-    top: 21%;
-    left: 17%;
-}
 
-.big_cristal {
-    position: absolute;
-    width: 123px;
-    height: 123px;
-    right: 3%;
-    top: 30%;
-}
-.arm {
-    position: absolute;
-    top: 82%;
-    left: 0;
-    width: 367px;
-    height: 367px;
+
+
+@media screen and (min-width: 480px) {
+    .cristals {
+        padding-top: 60px;
+        position: relative;
+
+        &__text {
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--white, #FFF);
+            text-align: center;
+            font-size: 15px;
+            
+        }
+    }
+
+    .cristal {
+        &_small {
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            top: 3%;
+            left: 92%;
+        }
+    
+        &_big {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 88%;
+            top: 100%;
+        }
+        &_arm {
+            position: absolute;
+            top: 82%;
+            left: 0;
+            width: 1px;
+            height: 1px;
+        }
+    }
+    
 }
