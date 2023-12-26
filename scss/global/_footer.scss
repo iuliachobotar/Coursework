@@ -319,10 +319,23 @@
         }
         &:hover {
             background-color: #FFF;
+            
         }
 
-        &:hover &_media_title {
+        &:hover &_title {
             color: #99449F;
+        }
+
+
+        &_arrow_item:hover {
+            width: 46px;
+            height: 46px;
+            background-color: #ffffff;
+            transition: 0.5s ease;
+        }
+
+        &_arrow_item:hover .name_arrow {
+            fill: #99449F;
         }
     }
 
@@ -445,16 +458,13 @@
 
         
 
-        &_item:hover {
-            background-color: #fff;
-            transition: 0.5s ease;
+        &:hover {
+            background-color: #FFF;
+            
         }
 
-        &_arrow_item:hover {
-            width: 46px;
-            height: 46px;
-            background-color: #ffffff;
-            transition: 0.5s ease;
+        &:hover &_title {
+            color: #99449F;
         }
 
         &_arrow_item:hover .name_arrow {
@@ -531,9 +541,10 @@
         }
         &:hover {
             background-color: #FFF;
+            
         }
 
-        &:hover &_media_title {
+        &:hover &_title {
             color: #99449F;
         }
     }

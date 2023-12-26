@@ -473,8 +473,17 @@ img {
   .social_media:hover {
     background-color: #FFF;
   }
-  .social_media:hover .social_media_media_title {
+  .social_media:hover .social_media_title {
     color: #99449F;
+  }
+  .social_media_arrow_item:hover {
+    width: 46px;
+    height: 46px;
+    background-color: #ffffff;
+    transition: 0.5s ease;
+  }
+  .social_media_arrow_item:hover .name_arrow {
+    fill: #99449F;
   }
   .name {
     width: 20px;
@@ -572,15 +581,11 @@ img {
     display: flex;
     gap: 55px;
   }
-  .social_item:hover {
-    background-color: #fff;
-    transition: 0.5s ease;
+  .social:hover {
+    background-color: #FFF;
   }
-  .social_arrow_item:hover {
-    width: 46px;
-    height: 46px;
-    background-color: #ffffff;
-    transition: 0.5s ease;
+  .social:hover .social_title {
+    color: #99449F;
   }
   .social_arrow_item:hover .name_arrow {
     fill: #99449F;
@@ -644,7 +649,7 @@ img {
   .social_media:hover {
     background-color: #FFF;
   }
-  .social_media:hover .social_media_media_title {
+  .social_media:hover .social_media_title {
     color: #99449F;
   }
   .name {
