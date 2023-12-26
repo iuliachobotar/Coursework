@@ -308,3 +308,202 @@
         }
     }
 }
+
+
+@media screen and (min-width: 1000px) and (max-width: 1670px) {
+    .history {
+        padding-top: 200px;
+    
+        & .container {
+            padding: 0;
+        }
+    
+        &_item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 160px;
+        }
+    
+        &_card {
+            display: flex;
+            gap: 21px;
+            flex-direction: row;
+        }
+    
+        &_card img {
+            width: 100%;
+            height: auto;
+        }
+    
+        &_card img,
+        &_card div {
+            width: calc(50% - 10px);
+            background-size: cover;
+        }
+    
+        &_card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    
+        &_text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--white, #FFF);
+            font-family: 'Lexend Giga';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 45px;
+        }
+    
+        &_text :not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .story {
+        color: var(--white, #FFF);
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 9.6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        & span {
+            color: var(--violet, #99449F);
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 9.6px;
+        }
+    }
+    
+    
+    .background_section {
+    
+        & {
+            background-image: url(../image/section1_1.png);
+        }
+    
+        &-2 {
+            background-image: url(../image/section2_2.png);
+        }
+    
+        &-3 {
+            background-image: url(../image/section3_3.png);
+        }
+    
+        &-4 {
+            background-image: url(../image/section4_4.png);
+    
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .history {
+        padding-top: 200px;
+    
+        & .container {
+            padding: 0;
+        }
+    
+        &_item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 160px;
+        }
+    
+        &_card {
+            display: flex;
+            gap: 21px;
+            flex-direction: row;
+        }
+    
+        &_card img {
+            width: 100%;
+            height: auto;
+        }
+    
+        &_card img,
+        &_card div {
+            width: calc(50% - 10px);
+            background-size: cover;
+        }
+    
+        &_card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    
+        &_text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--white, #FFF);
+            font-family: 'Lexend Giga';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 45px;
+        }
+    
+        &_text :not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .story {
+        color: var(--white, #FFF);
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 9.6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        & span {
+            color: var(--violet, #99449F);
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 9.6px;
+        }
+    }
+    
+    
+    .background_section {
+    
+        & {
+            background-image: url(../image/section1_1.png);
+        }
+    
+        &-2 {
+            background-image: url(../image/section2_2.png);
+        }
+    
+        &-3 {
+            background-image: url(../image/section3_3.png);
+        }
+    
+        &-4 {
+            background-image: url(../image/section4_4.png);
+    
+        }
+    }
+}

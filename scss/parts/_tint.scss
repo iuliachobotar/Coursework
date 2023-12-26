@@ -1,3 +1,5 @@
+
+
 .tint {
     position: relative;
     background-image: url('../image/background.png');
@@ -54,7 +56,7 @@
         background-size: 170%;
         background-repeat: no-repeat;
         padding-top: 225px;
-        height: 200vh;
+        height: 105vh;
 
         &_h2 {
             color: #FFF;
@@ -106,7 +108,7 @@
         background-size: 170%;
         background-repeat: no-repeat;
         padding-top: 225px;
-        height: 180vh;
+        height: 150vh;
 
         &_h2 {
             color: #FFF;
@@ -146,4 +148,55 @@
         }
   }
   
+}
+
+
+@media screen and (min-width: 1920px) {
+    .tint {
+        position: relative;
+        background-image: url('../image/background.png');
+        padding-top: 225px;
+        height: 150vh;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
+        
+        &_h2 {
+            color: #FFF;
+            font-family: 'Lexend Giga';
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -9.28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &_h1 {
+            position: relative;
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 230px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 18.4px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 688px;
+            height: 688px;
+            z-index: 2;
+        }
+    }
 }
