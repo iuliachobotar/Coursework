@@ -251,3 +251,134 @@
     }
 
 }
+
+
+@media screen and (min-width: 680px) {
+    .card_list {
+        position: relative;
+        border: 3px solid var(--violet, #99449F);
+        border-radius: 10px;
+        width: calc((100% - 35px)/2);
+
+
+        & .name {
+            color: var(--white, #FFF);
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-top: 19px;
+            padding-left: 19px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white, #FFF);
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 6.4px;
+
+        & span {
+            color: var(--violet, #99449F);
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 6.4px;
+        }
+    }
+
+    .card {
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px 35px;
+            flex-wrap: wrap;
+        }
+
+        &_mob {
+            padding-top: 180px;
+        }
+
+        &_thumb {
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+
+    .card_mob img {
+        width: 100%;
+        height: auto;
+    }
+
+    .num {
+        &_cristal {
+            position: absolute;
+            top: -25px;
+            right: -20px;
+            width: 69px;
+            height: 69px;
+        }
+
+        &_red {
+            position: absolute;
+            z-index: 3;
+            bottom: -75px;
+            right: -75px;
+            width: 161px;
+            height: 161px;
+        }
+
+        &_purple {
+            position: absolute;
+            z-index: 3;
+            left: -75px;
+            bottom: -75px;
+            width: 161px;
+            height: 161px;
+        }
+    }
+
+
+    .numeral {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--white, #FFF);
+        text-align: center;
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .row .card_list.show {
+        animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .row .card_list.hide {
+        display: none;
+    }
+}

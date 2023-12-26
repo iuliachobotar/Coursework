@@ -67,3 +67,35 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .header {
+
+        &_menu_link a {
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 19%;
+            padding-left: 19%;
+        }
+
+        &_menu :not(:last-child) {
+            padding-right: 22px;
+        }
+    }
+}

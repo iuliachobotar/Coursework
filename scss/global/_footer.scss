@@ -135,9 +135,211 @@
         padding-left: 4%;
         padding-right: 4%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         padding-top: 25px;
-        padding-bottom: 30px;
+        padding-bottom: 0;
+
+        &_phone {              //adaptive
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_text {
+            margin-bottom: 24px;
+        }
+
+        &_text_first {
+            color: #FFF;
+            font-family: 'Lexend Giga', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        &_text_second {
+            color: #FFF;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.28px;
+        }
+
+        &_text :not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+
+        &_info_text {
+            color: var(--white, #FFF);
+            font-family: 'Lexend Giga';
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_info_year {
+            color: var(--violet, #99449F);
+            font-family: 'Lexend Giga';
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_info {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        &_info :not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    .social {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        &_vector_broke {
+            position: relative;
+            display: none;
+        }
+
+        &_media_top {
+            position: absolute;
+            width: 12px;
+            height: 10.5px;
+            top: -1px;
+            right: -1px;
+            fill: #131313;
+        }
+
+        &_media_bottom {
+            position: absolute;
+            width: 21.5px;
+            height: 4px;
+            fill: #131313;
+            bottom: 0;
+        }
+
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20%;
+            background-color: #99449F;
+            width: 32px;
+            height: 32px;
+            display: none;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        &_button {
+            margin-left: 55px;
+            display: flex;
+            gap: 55px;
+        }
+
+        &_media_title {
+            text-transform: uppercase;
+            color: #FFF;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: 0.5s ease;
+        }
+
+        &_media {
+            background-color: #99449F;
+            padding: 9px 19px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s ease;
+
+        }
+
+        &_media:hover {
+            background-color: #FFF;
+        }
+
+        &_media:hover &_media_title{
+            color: #99449F;
+        }
+        &_item:hover {
+            background-color: #fff;
+            transition: 0.5s ease;
+        }
+
+        &_arrow_item:hover {
+            width: 46px;
+            height: 46px;
+            background-color: #ffffff;
+            transition: 0.5s ease;
+        }
+
+        &_arrow_item:hover .name_arrow {
+            fill: #99449F;
+        }
+
+        &_arrow_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20%;
+            background-color: #99449F;
+            width: 30px;
+            height: 30px;
+            transition: 0.5s ease;
+        }
+
+        &_arrow_item a {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_networks {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .name {
+        width: 20px;
+        height: 20px;
+
+        &_arrow {
+            fill: #FFF;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding-left: 2%;
+        padding-right: 2%;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 18px;
+        padding-bottom: 0;
 
         &_phone {
             display: flex;
@@ -325,6 +527,4 @@
             height: 20px;
         }
     }
-
-
 }
