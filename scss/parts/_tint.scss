@@ -48,7 +48,7 @@
 
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px)  {
     .tint {
         position: relative;
         background-image: url('../image/background.png');
@@ -99,6 +99,55 @@
 }
 
 
+@media screen and (min-width: 480px)  {
+    .tint {
+        position: relative;
+        background-image: url('../image/background.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+        padding-top: 225px;
+        height: 105vh;
+
+        &_h2 {
+            color: #FFF;
+            font-family: 'Lexend Giga';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -3.48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &_h1 {
+            position: relative;
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 446px;
+            height: 446px;
+            z-index: 2;
+        }
+  }
+  
+}
 
 @media screen and (min-width: 768px) {
     .tint {
