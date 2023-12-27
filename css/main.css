@@ -1143,7 +1143,7 @@ img {
     position: relative;
     color: #fff;
     font-family: "Broken Detroit", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1158,8 +1158,8 @@ img {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    width: 420px;
-    height: 420px;
+    width: 400px;
+    height: 400px;
     z-index: 2;
   }
 }
