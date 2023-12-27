@@ -3291,7 +3291,7 @@ img {
     position: relative;
     border: 3px solid var(--violet, #99449F);
     border-radius: 10px;
-    width: 100%;
+    width: calc((100% - 0px) / 1);
   }
   .card_list .name {
     color: var(--white, #FFF);
