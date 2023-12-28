@@ -3564,7 +3564,7 @@ img {
     position: relative;
     border: 3px solid var(--violet, #99449F);
     border-radius: 10px;
-    width: calc((100% - 105px) / 4);
+    width: calc((100% - 70px) / 3);
   }
   .card_list .name {
     color: var(--white, #FFF);
