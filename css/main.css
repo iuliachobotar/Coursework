@@ -581,9 +581,6 @@ img {
     display: flex;
     gap: 55px;
   }
-  .social:hover {
-    background-color: #FFF;
-  }
   .social:hover .social_title {
     color: #99449F;
   }
@@ -664,19 +661,22 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 18px;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
   }
   .footer_phone {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 250px;
   }
   .footer_text {
-    margin-bottom: 22px;
+    margin-bottom: 0px;
   }
   .footer_text_first {
     color: #FFF;
@@ -687,11 +687,11 @@ img {
   .footer_text_second {
     color: #FFF;
     font-family: "Broken Detroit", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.6px;
+    letter-spacing: 1.92px;
   }
   .footer_text :not(:last-child) {
     margin-bottom: 12px;
@@ -716,6 +716,7 @@ img {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    align-items: center;
   }
   .footer_info :not(:last-child) {
     margin-bottom: 12px;
@@ -1213,20 +1214,19 @@ img {
   .tint {
     position: relative;
     background-image: url("../image/background.png");
-    background-position: center;
-    background-size: 130%;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 225px;
-    height: 90vh;
+    height: 115vh;
   }
   .tint_h2 {
     color: #FFF;
     font-family: "Lexend Giga";
-    font-size: 40px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    letter-spacing: -5.8px;
+    letter-spacing: -9.28px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1235,11 +1235,11 @@ img {
     position: relative;
     color: #fff;
     font-family: "Broken Detroit", sans-serif;
-    font-size: 96px;
+    font-size: 230px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 7.68px;
+    letter-spacing: 18.4px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -1250,12 +1250,12 @@ img {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    width: 658px;
-    height: 658px;
+    width: 688px;
+    height: 688px;
     z-index: 2;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   .tint {
     position: relative;
     background-image: url("../image/background.png");
@@ -1307,8 +1307,9 @@ img {
     background-image: url("../image/background.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
     padding-top: 225px;
-    height: 115vh;
+    height: 75vh;
   }
   .tint_h2 {
     color: #FFF;
@@ -1446,6 +1447,7 @@ img {
     height: 34px;
     top: 3%;
     left: 92%;
+    display: none;
   }
   .cristal_big {
     position: absolute;
@@ -1453,6 +1455,7 @@ img {
     height: 50px;
     right: 88%;
     top: 100%;
+    display: none;
   }
   .cristal_arm {
     position: absolute;
@@ -2684,31 +2687,32 @@ img {
 }
 @media screen and (min-width: 768px) {
   .history {
-    padding-top: 180px;
+    padding-top: 200px;
   }
   .history .container {
     padding: 0;
-  }
-  .history img {
-    width: 100%;
-    height: auto;
   }
   .history_item {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 160px;
   }
   .history_card {
     display: flex;
     gap: 21px;
-    flex-direction: column-reverse;
+    flex-direction: row;
+  }
+  .history_card img {
+    width: 100%;
+    height: auto;
   }
   .history_card img, .history_card div {
     width: calc(50% - 10px);
     background-size: cover;
-    width: 100%;
-    height: auto;
+  }
+  .history_card:nth-child(even) {
+    flex-direction: row-reverse;
   }
   .history_text {
     display: flex;
@@ -2720,7 +2724,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 65px;
+    padding: 45px;
   }
   .history_text :not(:last-child) {
     margin-bottom: 20px;
@@ -2728,11 +2732,11 @@ img {
   .story {
     color: var(--white, #FFF);
     font-family: "Broken Detroit", sans-serif;
-    font-size: 64px;
+    font-size: 96px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 6.4px;
+    letter-spacing: 9.6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2740,27 +2744,23 @@ img {
   .story span {
     color: var(--violet, #99449F);
     font-family: "Broken Detroit", sans-serif;
-    font-size: 64px;
+    font-size: 96px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 6.4px;
+    letter-spacing: 9.6px;
   }
   .background_section {
     background-image: url(../image/section1_1.png);
-    background-image: none;
   }
   .background_section-2 {
     background-image: url(../image/section2_2.png);
-    background-image: none;
   }
   .background_section-3 {
     background-image: url(../image/section3_3.png);
-    background-image: none;
   }
   .background_section-4 {
     background-image: url(../image/section4_4.png);
-    background-image: none;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1670px) {
@@ -2973,13 +2973,13 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .button_list {
-    width: 50%;
+    width: 80%;
   }
   .button_list:last-child {
     width: 100%;
   }
   .button_list:last-child .button_item {
-    width: 50%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3024,7 +3024,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .button_list {
-    width: 50%;
+    width: 20%;
   }
   .button_list:last-child {
     width: 100%;
@@ -3067,7 +3067,60 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button_list {
+    width: 20%;
+  }
+  .button_list:last-child {
+    width: 100%;
+  }
+  .button_list:last-child .button_item {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button_item {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .button_item {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Broken Detroit", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 36px;
+    transition: 0.5s;
+    background: var(--violet, #99449F);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 14px 32px 0px rgba(0, 0, 0, 0.1), 0px 58px 58px 0px rgba(0, 0, 0, 0.09), 0px 130px 78px 0px rgba(0, 0, 0, 0.05), 0px 231px 92px 0px rgba(0, 0, 0, 0.01), 0px 360px 101px 0px rgba(0, 0, 0, 0);
+  }
+  .button_item .active {
+    color: var(--white, #99449F);
+    background: var(--violet, #fff);
+  }
+  .button_item:hover, .button_item:active {
+    color: var(--white, #99449F);
+    background: var(--violet, #fff);
+    cursor: pointer;
+  }
+  .button_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 60px;
     margin-bottom: 50px;
@@ -3075,13 +3128,13 @@ img {
 }
 @media screen and (min-width: 1000px) and (max-width: 1670px) {
   .button_list {
-    width: 50%;
+    width: 20%;
   }
   .button_list:last-child {
     width: 100%;
   }
   .button_list:last-child .button_item {
-    width: 100%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3119,6 +3172,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 60px;
     margin-bottom: 50px;
@@ -3126,13 +3180,13 @@ img {
 }
 @media screen and (min-width: 1920px) {
   .button_list {
-    width: 50%;
+    width: 20%;
   }
   .button_list:last-child {
     width: 100%;
   }
   .button_list:last-child .button_item {
-    width: 100%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3170,6 +3224,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 60px;
     margin-bottom: 50px;
@@ -3507,7 +3562,7 @@ img {
     position: relative;
     border: 3px solid var(--violet, #99449F);
     border-radius: 10px;
-    width: calc((100% - 35px) / 2);
+    width: calc((100% - 105px) / 4);
   }
   .card_list .name {
     color: var(--white, #FFF);

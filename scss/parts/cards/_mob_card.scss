@@ -389,7 +389,7 @@
         position: relative;
         border: 3px solid var(--violet, #99449F);
         border-radius: 10px;
-        width: calc((100% - 35px)/2);
+        width: calc((100% - 105px)/4);
 
 
         & .name {
@@ -513,6 +513,9 @@
         display: none;
     }
 }
+
+
+
 @media screen and (min-width: 1000px) and (max-width: 1670px) {
     .card_list {
         position: relative;
