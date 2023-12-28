@@ -3284,6 +3284,8 @@ img {
 
 .card_mob {
   padding-top: 200px;
+  overflow: hidden;
+  padding-bottom: 67px;
 }
 
 .card_thumb {
@@ -3393,6 +3395,8 @@ img {
   }
   .card_mob {
     padding-top: 150px;
+    overflow: hidden;
+    padding-bottom: 67px;
   }
   .card_thumb {
     overflow: hidden;
@@ -3501,6 +3505,8 @@ img {
   }
   .card_mob {
     padding-top: 150px;
+    overflow: hidden;
+    padding-bottom: 67px;
   }
   .card_thumb {
     overflow: hidden;
@@ -3609,6 +3615,8 @@ img {
   }
   .card_mob {
     padding-top: 180px;
+    overflow: hidden;
+    padding-bottom: 67px;
   }
   .card_thumb {
     overflow: hidden;
@@ -3677,7 +3685,7 @@ img {
   .card_list .name {
     color: var(--white, #FFF);
     font-family: "Broken Detroit", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -3693,7 +3701,7 @@ img {
     justify-content: center;
     color: var(--white, #FFF);
     font-family: "Broken Detroit", sans-serif;
-    font-size: 64px;
+    font-size: 96px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -3717,6 +3725,8 @@ img {
   }
   .card_mob {
     padding-top: 200px;
+    overflow: hidden;
+    padding-bottom: 67px;
   }
   .card_thumb {
     overflow: hidden;
@@ -3821,6 +3831,8 @@ img {
   }
   .card_mob {
     padding-top: 200px;
+    overflow: hidden;
+    padding-bottom: 67px;
   }
   .card_thumb {
     overflow: hidden;
@@ -4649,7 +4661,7 @@ img {
     cursor: pointer;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .modal {
     position: fixed;
     inset: 0;
