@@ -3564,17 +3564,17 @@ img {
     position: relative;
     border: 3px solid var(--violet, #99449F);
     border-radius: 10px;
-    width: calc((100% - 70px) / 3);
+    width: calc((100% - 105px) / 4);
   }
   .card_list .name {
     color: var(--white, #FFF);
     font-family: "Broken Detroit", sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-top: 19px;
-    padding-left: 19px;
+    padding-top: 14px;
+    padding-left: 14px;
     text-transform: uppercase;
     position: absolute;
     top: 0;
