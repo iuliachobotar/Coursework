@@ -142,7 +142,7 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1500px) {
     .cristals {
         padding-top: 80px;
         position: relative;
@@ -165,6 +165,7 @@
             height: 58px;
             top: 3%;
             left: 92%;
+            display: none;
         }
 
         &_big {
@@ -173,6 +174,7 @@
             height: 68px;
             right: 88%;
             top: 100%;
+            display: none;
         }
 
         &_arm {

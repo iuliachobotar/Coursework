@@ -327,7 +327,7 @@
         &_card {
             display: flex;
             gap: 21px;
-            flex-direction: row;
+            flex-direction: column-reverse;
         }
     
         &_card img {
@@ -392,19 +392,22 @@
     
         & {
             background-image: url(../image/section1_1.png);
+            background-image: none;
         }
     
         &-2 {
             background-image: url(../image/section2_2.png);
+            background-image: none;
         }
     
         &-3 {
             background-image: url(../image/section3_3.png);
+            background-image: none;
         }
     
         &-4 {
             background-image: url(../image/section4_4.png);
-    
+            background-image: none;
         }
     }
     }

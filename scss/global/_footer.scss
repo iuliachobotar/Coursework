@@ -577,7 +577,7 @@
         &_phone {
             display: flex;
             flex-direction: row;
-            gap: 250px;
+            gap: 50px;
         }
         
         &_text {
@@ -772,11 +772,12 @@ display: none;
         padding-top: 10px;
         padding-bottom: 10px;
         justify-content: space-evenly;
+        
     
         &_phone {
             display: flex;
             flex-direction: row;
-            gap: 40px;
+            gap: 100px;
         }
         
         &_text {
