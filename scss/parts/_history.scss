@@ -335,15 +335,15 @@
             height: auto;
         }
     
-        &_card img,
-        &_card div {
-            width: calc(50% - 10px);
-            background-size: cover;
-        }
+        // &_card img,
+        // &_card div {
+        //     width: calc(50% - 10px);
+        //     background-size: cover;
+        // }
     
-        &_card:nth-child(even) {
-            flex-direction: row-reverse;
-        }
+        // &_card:nth-child(even) {
+        //     flex-direction: row-reverse;
+        // }
     
         &_text {
             display: flex;
