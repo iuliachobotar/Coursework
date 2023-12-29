@@ -3391,6 +3391,7 @@ img {
     justify-content: center;
     gap: 80px 35px;
     flex-wrap: wrap;
+    overflow: hidden;
   }
   .card_mob {
     padding-top: 150px;
@@ -4011,13 +4012,13 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 700px;
+    height: 550px;
   }
   .picture_block_man {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 700px;
+    height: 550px;
   }
   .text_block :not(:last-child) {
     margin-bottom: 80px;
