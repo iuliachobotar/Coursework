@@ -1169,7 +1169,7 @@ img {
     position: relative;
     background-image: url("../image/background.png");
     background-position: center;
-    background-size: 170%;
+    background-size: 140%;
     background-repeat: no-repeat;
     padding-top: 225px;
     height: 105vh;
@@ -1309,7 +1309,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 225px;
-    height: 130vh;
+    height: 105vh;
   }
   .tint_h2 {
     color: #FFF;
@@ -1352,7 +1352,7 @@ img {
     position: relative;
     background-image: url("../image/background.png");
     padding-top: 225px;
-    height: 90vh;
+    height: 150vh;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -2710,6 +2710,11 @@ img {
   .history_card img {
     width: 100%;
     height: auto;
+  }
+  .history_card img, .history_card div {
+    width: calc(70% - 10px);
+    background-size: cover;
+    margin: auto;
   }
   .history_text {
     display: flex;
