@@ -242,7 +242,8 @@
     }
 
     .character {
-        max-width: 390px;
+        max-width: 330px;
+        
 
 
         &__img {
@@ -284,6 +285,7 @@
         &__thumb {
             border-radius: 40px;
             overflow: hidden;
+            
         }
 
         &__text {

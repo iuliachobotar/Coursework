@@ -145,7 +145,7 @@ img {
   .header_menu_link a {
     color: #fff;
     font-family: "Broken Detroit", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1131,7 +1131,7 @@ img {
   .tint_h2 {
     color: #FFF;
     font-family: "Lexend Giga";
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -1144,7 +1144,7 @@ img {
     position: relative;
     color: #fff;
     font-family: "Broken Detroit", sans-serif;
-    font-size: 50px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1159,8 +1159,8 @@ img {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     z-index: 2;
   }
 }
@@ -1263,7 +1263,7 @@ img {
     background-size: 130%;
     background-repeat: no-repeat;
     padding-top: 225px;
-    height: 105vh;
+    height: 135vh;
   }
   .tint_h2 {
     color: #FFF;
@@ -1309,7 +1309,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 225px;
-    height: 75vh;
+    height: 130vh;
   }
   .tint_h2 {
     color: #FFF;
@@ -1352,7 +1352,7 @@ img {
     position: relative;
     background-image: url("../image/background.png");
     padding-top: 225px;
-    height: 150vh;
+    height: 90vh;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -1779,7 +1779,7 @@ img {
     justify-content: center;
   }
   .character {
-    max-width: 390px;
+    max-width: 330px;
   }
   .character__img {
     position: relative;
@@ -4314,7 +4314,7 @@ img {
 }
 .modal_main {
   position: relative;
-  width: 528px;
+  width: 550px;
   border-radius: 4px;
   background: #131313;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -4661,7 +4661,7 @@ img {
     cursor: pointer;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .modal {
     position: fixed;
     inset: 0;
