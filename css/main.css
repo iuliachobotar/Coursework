@@ -1172,7 +1172,7 @@ img {
     background-size: 140%;
     background-repeat: no-repeat;
     padding-top: 225px;
-    height: 95vh;
+    height: 70vh;
   }
   .tint_h2 {
     color: #FFF;
@@ -1263,7 +1263,7 @@ img {
     background-size: 130%;
     background-repeat: no-repeat;
     padding-top: 225px;
-    height: 135vh;
+    height: 100vh;
   }
   .tint_h2 {
     color: #FFF;
@@ -1309,7 +1309,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 225px;
-    height: 135vh;
+    height: 100vh;
   }
   .tint_h2 {
     color: #FFF;
@@ -2705,18 +2705,11 @@ img {
   .history_card {
     display: flex;
     gap: 21px;
-    flex-direction: row;
+    flex-direction: column-reverse;
   }
   .history_card img {
     width: 100%;
     height: auto;
-  }
-  .history_card img, .history_card div {
-    width: calc(70% - 10px);
-    background-size: cover;
-  }
-  .history_card:nth-child(even) {
-    flex-direction: row-reverse;
   }
   .history_text {
     display: flex;
@@ -2724,7 +2717,7 @@ img {
     flex-direction: column;
     color: var(--white, #FFF);
     font-family: "Lexend Giga";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -2756,15 +2749,19 @@ img {
   }
   .background_section {
     background-image: url(../image/section1_1.png);
+    background-image: none;
   }
   .background_section-2 {
     background-image: url(../image/section2_2.png);
+    background-image: none;
   }
   .background_section-3 {
     background-image: url(../image/section3_3.png);
+    background-image: none;
   }
   .background_section-4 {
     background-image: url(../image/section4_4.png);
+    background-image: none;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1670px) {
@@ -2790,7 +2787,7 @@ img {
     height: auto;
   }
   .history_card img, .history_card div {
-    width: calc(70% - 10px);
+    width: calc(50% - 10px);
     background-size: cover;
   }
   .history_card:nth-child(even) {
@@ -2845,7 +2842,7 @@ img {
     background-image: url(../image/section4_4.png);
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1670px) and (max-width: 1930px) {
   .history {
     padding-top: 200px;
   }
