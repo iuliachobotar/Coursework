@@ -327,7 +327,7 @@
         &_card {
             display: flex;
             gap: 21px;
-            flex-direction: column-reverse;
+            flex-direction: row;
         }
     
         &_card img {
@@ -339,12 +339,11 @@
         &_card div {
             width: calc(70% - 10px);
             background-size: cover;
-            margin: auto;
         }
     
-        // &_card:nth-child(even) {
-        //     flex-direction: row-reverse;
-        // }
+        &_card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
     
         &_text {
             display: flex;
@@ -352,7 +351,7 @@
             flex-direction: column;
             color: var(--white, #FFF);
             font-family: 'Lexend Giga';
-            font-size: 20px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -393,22 +392,19 @@
     
         & {
             background-image: url(../image/section1_1.png);
-            background-image: none;
         }
     
         &-2 {
             background-image: url(../image/section2_2.png);
-            background-image: none;
         }
     
         &-3 {
             background-image: url(../image/section3_3.png);
-            background-image: none;
         }
     
         &-4 {
             background-image: url(../image/section4_4.png);
-            background-image: none;
+    
         }
     }
     }
@@ -442,7 +438,7 @@
     
         &_card img,
         &_card div {
-            width: calc(50% - 10px);
+            width: calc(70% - 10px);
             background-size: cover;
         }
     
