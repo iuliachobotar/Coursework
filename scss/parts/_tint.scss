@@ -1,0 +1,347 @@
+
+
+.tint {
+    position: relative;
+    background-image: url('../image/background.png');
+    padding-top: 225px;
+    height: 100vh;
+
+    
+    &_h2 {
+        color: #FFF;
+        font-family: 'Lexend Giga';
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -9.28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &_h1 {
+        position: relative;
+        color: #fff;
+        font-family: 'Broken Detroit', sans-serif;
+        font-size: 180px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 18.4px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_picture {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 688px;
+        height: 688px;
+        z-index: 2;
+    }
+}
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+    .tint {
+        position: relative;
+        background-image: url('../image/background.png');
+        background-position: center;
+        background-size: 170%;
+        background-repeat: no-repeat;
+        padding-top: 225px;
+        height: 80vh;
+
+        &_h2 {
+            color: #FFF;
+            font-family: 'Lexend Giga';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -3.48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &_h1 {
+            position: relative;
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 350px;
+            height: 350px;
+            z-index: 2;
+        }
+  }
+  
+}
+
+
+@media screen and (min-width: 480px)  {
+    .tint {
+        position: relative;
+        background-image: url('../image/background.png');
+        background-position: center;
+        background-size: 140%;
+        background-repeat: no-repeat;
+        padding-top: 225px;
+        height: 70vh;
+
+        &_h2 {
+            color: #FFF;
+            font-family: 'Lexend Giga';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -3.48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &_h1 {
+            position: relative;
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 420px;
+            height: 420px;
+            z-index: 2;
+        }
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+    .tint {
+        position: relative;
+        background-image: url('../image/background.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-top: 225px;
+        height: 115vh;
+
+        &_h2 {
+            color: #FFF;
+            font-family: 'Lexend Giga';
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -9.28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &_h1 {
+            position: relative;
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 230px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 18.4px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 688px;
+            height: 688px;
+            z-index: 2;
+        }
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .tint {
+        position: relative;
+        background-image: url('../image/background.png');
+        background-position: center;
+        background-size: 130%;
+        background-repeat: no-repeat;
+        padding-top: 225px;
+        height: 100vh;
+
+        &_h2 {
+            color: #FFF;
+            font-family: 'Lexend Giga';
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -5.8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &_h1 {
+            position: relative;
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 7.68px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 658px;
+            height: 658px;
+            z-index: 2;
+        }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1670px){
+    .tint {
+        position: relative;
+        background-image: url('../image/background.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 225px;
+        height: 100vh;
+
+        &_h2 {
+            color: #FFF;
+            font-family: 'Lexend Giga';
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -5.8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &_h1 {
+            position: relative;
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 7.68px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 658px;
+            height: 658px;
+            z-index: 2;
+        }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+    .tint {
+        position: relative;
+        background-image: url('../image/background.png');
+        padding-top: 225px;
+        height: 95vh;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
+        
+        &_h2 {
+            color: #FFF;
+            font-family: 'Lexend Giga';
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -9.28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &_h1 {
+            position: relative;
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 230px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 18.4px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 688px;
+            height: 688px;
+            z-index: 2;
+        }
+    }
+}

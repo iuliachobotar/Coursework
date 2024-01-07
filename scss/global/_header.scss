@@ -1,0 +1,180 @@
+
+    .header {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    
+        &_menu_link a {
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+        &_menu {
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &_menu :not(:last-child) {
+            padding-right: 36px;
+        }
+    }
+    
+
+
+
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+    .header {
+
+        &_menu_link a {
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20%;
+            padding-left: 20%;
+            
+        }
+
+        &_menu :not(:last-child) {
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+
+        &_menu_link a {
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20%;
+            padding-left: 20%;
+            
+        }
+
+        &_menu :not(:last-child) {
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+
+        &_menu_link a {
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 19%;
+            padding-left: 19%;
+        }
+
+        &_menu :not(:last-child) {
+            padding-right: 22px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1920px) {
+    .header {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    
+        &_menu_link a {
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+        &_menu {
+            color: #fff;
+            font-family: 'Broken Detroit', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &_menu :not(:last-child) {
+            padding-right: 36px;
+        }
+    }
+    
+}
